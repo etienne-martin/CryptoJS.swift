@@ -14,23 +14,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Load only what's necessary
-        var AES = CryptoJS.AES()
-        var MD5 = CryptoJS.MD5()
-        var SHA1 = CryptoJS.SHA1()
-        var SHA256 = CryptoJS.SHA256()
-        var SHA3 = CryptoJS.SHA3()
+        let AES = CryptoJS.AES()
+        let MD5 = CryptoJS.MD5()
+        let SHA1 = CryptoJS.SHA1()
+        let SHA256 = CryptoJS.SHA256()
+        let SHA3 = CryptoJS.SHA3()
         
-        var encrypted = AES.encrypt("awd",secretKey: "awd")
+        var encrypted = AES.encrypt("secretMessage",secretKey: "password123")
         
-            println(encrypted)
+        println(encrypted)
         
-        println(AES.decrypt(encrypted,secretKey: "awd"))
+        println(AES.decrypt(encrypted,secretKey: "password123"))
         
-        println(MD5.hash("awd"))
-        println(SHA1.hash("awd"))
-        println(SHA256.hash("awd"))
-        println(SHA3.hash("awd"))
-        println(SHA3.hash("awd",outputLength: 256))
+        println(MD5.hash("mystring"))
+        println(SHA1.hash("mystring"))
+        println(SHA256.hash("mystring"))
+        println(SHA3.hash("mystring"))
+        println(SHA3.hash("mystring",outputLength: 256))
         
     }
 

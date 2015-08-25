@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E987E43C-70A3-45C6-9ACC-FE50E00681E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Crypto JS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D64356BDD00915E882FE39D9703D2DA3D4B29799</key>
+		<string>https://github.com/etienne-martin/Swift-Crypto-JS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Crypto JS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D64356BDD00915E882FE39D9703D2DA3D4B29799</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/etienne-martin/Swift-Crypto-JS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D64356BDD00915E882FE39D9703D2DA3D4B29799</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D64356BDD00915E882FE39D9703D2DA3D4B29799</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Swift%20Crypto%20JS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

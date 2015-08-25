@@ -1,5 +1,5 @@
 # Swift-Crypto-JS
-Cross device cryptography written in swift using the [Crypto JS library](https://code.google.com/p/crypto-js/).
+Cross device cryptography in swift using the [Crypto JS library](https://code.google.com/p/crypto-js/).
 
 Allows you to share the same crypto between a native iOS/OSX application and a web application.
 

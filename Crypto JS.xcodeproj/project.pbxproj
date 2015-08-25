@@ -13,6 +13,12 @@
 		6F72B0E31B6A8EBA0068287A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F72B0E21B6A8EBA0068287A /* Images.xcassets */; };
 		6F72B0E61B6A8EBA0068287A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F72B0E41B6A8EBA0068287A /* LaunchScreen.xib */; };
 		6F72B0F21B6A8EBA0068287A /* Crypto_JSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72B0F11B6A8EBA0068287A /* Crypto_JSTests.swift */; };
+		6FC3C94B1B8C2EC500F4956D /* CryptoJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */; };
+		6FC3C94F1B8C3F8200F4956D /* md5.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C94E1B8C3F8200F4956D /* md5.js */; };
+		6FC3C9511B8C406000F4956D /* sha256.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9501B8C406000F4956D /* sha256.js */; };
+		6FC3C9531B8C426C00F4956D /* sha3.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9521B8C426C00F4956D /* sha3.js */; };
+		6FC3C9551B8C431B00F4956D /* sha1.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9541B8C431B00F4956D /* sha1.js */; };
+		6FC3C9581B8C4D3400F4956D /* aes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9571B8C4D3400F4956D /* aes.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		6F72B0EB1B6A8EBA0068287A /* Crypto JSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto JSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F72B0F01B6A8EBA0068287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F72B0F11B6A8EBA0068287A /* Crypto_JSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_JSTests.swift; sourceTree = "<group>"; };
+		6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoJS.swift; sourceTree = "<group>"; };
+		6FC3C94E1B8C3F8200F4956D /* md5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = md5.js; sourceTree = "<group>"; };
+		6FC3C9501B8C406000F4956D /* sha256.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha256.js; sourceTree = "<group>"; };
+		6FC3C9521B8C426C00F4956D /* sha3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha3.js; sourceTree = "<group>"; };
+		6FC3C9541B8C431B00F4956D /* sha1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha1.js; sourceTree = "<group>"; };
+		6FC3C9571B8C4D3400F4956D /* aes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = aes.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +89,14 @@
 		6F72B0D81B6A8EBA0068287A /* Crypto JS */ = {
 			isa = PBXGroup;
 			children = (
+				6FC3C9571B8C4D3400F4956D /* aes.js */,
+				6FC3C94E1B8C3F8200F4956D /* md5.js */,
+				6FC3C9541B8C431B00F4956D /* sha1.js */,
+				6FC3C9501B8C406000F4956D /* sha256.js */,
+				6FC3C9521B8C426C00F4956D /* sha3.js */,
 				6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */,
 				6F72B0DD1B6A8EBA0068287A /* ViewController.swift */,
+				6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */,
 				6F72B0DF1B6A8EBA0068287A /* Main.storyboard */,
 				6F72B0E21B6A8EBA0068287A /* Images.xcassets */,
 				6F72B0E41B6A8EBA0068287A /* LaunchScreen.xib */,
@@ -192,9 +210,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC3C94F1B8C3F8200F4956D /* md5.js in Resources */,
+				6FC3C9511B8C406000F4956D /* sha256.js in Resources */,
+				6FC3C9581B8C4D3400F4956D /* aes.js in Resources */,
 				6F72B0E11B6A8EBA0068287A /* Main.storyboard in Resources */,
 				6F72B0E61B6A8EBA0068287A /* LaunchScreen.xib in Resources */,
+				6FC3C9531B8C426C00F4956D /* sha3.js in Resources */,
 				6F72B0E31B6A8EBA0068287A /* Images.xcassets in Resources */,
+				6FC3C9551B8C431B00F4956D /* sha1.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F72B0DE1B6A8EBA0068287A /* ViewController.swift in Sources */,
+				6FC3C94B1B8C2EC500F4956D /* CryptoJS.swift in Sources */,
 				6F72B0DC1B6A8EBA0068287A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +435,7 @@
 				6F72B0F71B6A8EBA0068287A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F72B0F81B6A8EBA0068287A /* Build configuration list for PBXNativeTarget "Crypto JSTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +444,7 @@
 				6F72B0FA1B6A8EBA0068287A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -3,7 +3,7 @@ Cross device cryptography in swift using the [Crypto JS library](https://code.go
 
 Allows you to share the same crypto between a native iOS/OSX application and a web application.
 
-#### AES
+#### AES encrypt/decrypt
 
 ```swift
 let AES = CryptoJS.AES()

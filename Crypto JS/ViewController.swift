@@ -15,6 +15,28 @@ class ViewController: UIViewController {
         
         // Load only what's necessary
         let AES = CryptoJS.AES()
+        
+        // Encrypt AES
+        var encrypted = AES.encrypt("secretMessage", secretKey: "password123")
+        var encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
+        
+        // Encrypt AES with custom mode & padding
+        let ECB = CryptoJS.mode.ECB()
+        let Iso97971 = CryptoJS.pad.Iso97971()
+        var encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+        
+        println(encrypted)
+        println(encrypted2)
+        println(encrypted3)
+        
+        // Decrypt AES
+        println(AES.decrypt(encrypted, secretKey: "password123"))
+        println(AES.decrypt(encrypted2, secretKey: "password123"))
+        
+        // Decrypt AES with custom mode & padding
+        println(AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
+        
+        // Hashers
         let MD5 = CryptoJS.MD5()
         let SHA1 = CryptoJS.SHA1()
         let SHA224 = CryptoJS.SHA224()
@@ -23,19 +45,6 @@ class ViewController: UIViewController {
         let SHA512 = CryptoJS.SHA512()
         let SHA3 = CryptoJS.SHA3()
         let RIPEMD160 = CryptoJS.RIPEMD160()
-        let ECB = CryptoJS.mode.ECB()
-        let Iso97971 = CryptoJS.pad.Iso97971()
-        
-        var encrypted = AES.encrypt("secretMessage",secretKey: "password123")
-        var encrypted2 = AES.encrypt("secretMessage",secretKey: "password123",options:["iv":123])
-        var encrypted3 = AES.encrypt("secretMessage",secretKey: "password123",options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
-        
-        println(encrypted)
-        println(encrypted2)
-        println(encrypted3)
-        
-        println(AES.decrypt(encrypted,secretKey: "password123"))
-        println(AES.decrypt(encrypted2,secretKey: "password123"))
         
         println(MD5.hash("mystring"))
         println(SHA1.hash("mystring"))

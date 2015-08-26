@@ -52,7 +52,19 @@ function encrypt(string, masterkey, options){
     return encrypted;
 }
 
-function decrypt(string, masterkey){
-    var decrypted = CryptoJS.AES.decrypt(string, masterkey);
-    return decrypted.toString(CryptoJS.enc.Utf8);
+function decrypt(string, masterkey, options){
+    
+    if( options ){
+        if( options.mode ){
+            options.mode = CryptoJS.mode[options.mode];
+        }
+        if( options.padding ){
+            options.padding = CryptoJS.pad[options.padding];
+        }
+        var decrypted = CryptoJS.AES.decrypt(string, masterkey, options).toString(CryptoJS.enc.Utf8);
+    }else{
+        var decrypted = CryptoJS.AES.decrypt(string, masterkey).toString(CryptoJS.enc.Utf8);
+    }
+    
+    return decrypted;
 }

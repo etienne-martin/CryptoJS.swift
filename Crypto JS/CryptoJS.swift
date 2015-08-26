@@ -55,8 +55,12 @@ public class CryptoJS{
                 return "\(encryptFunction.callWithArguments([secretMessage, secretKey]))"
             }
         }
-        public func decrypt(encryptedMessage: String,secretKey: String)->String {
-            return "\(decryptFunction.callWithArguments([encryptedMessage, secretKey]))"
+        public func decrypt(encryptedMessage: String,secretKey: String,options: AnyObject?=nil)->String {
+            if let unwrappedOptions: AnyObject = options {
+                return "\(decryptFunction.callWithArguments([encryptedMessage, secretKey, unwrappedOptions]))"
+            }else{
+                return "\(decryptFunction.callWithArguments([encryptedMessage, secretKey]))"
+            }
         }
         
     }

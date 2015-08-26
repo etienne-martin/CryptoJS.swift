@@ -376,6 +376,10 @@ public class CryptoJS{
     public class mode: CryptoJS{
         
         var CFB:String = "CFB"
+        var CTR:String = "CTR"
+        var OFB:String = "OFB"
+        var ECB:String = "ECB"
+        
         public class CFB: CryptoJS{
             override init(){
                 super.init()
@@ -394,8 +398,6 @@ public class CryptoJS{
                 }
             }
         }
-        
-        var CTR:String = "CTR"
         public class CTR: CryptoJS{
             override init(){
                 super.init()
@@ -415,7 +417,6 @@ public class CryptoJS{
             }
         }
         
-        var OFB:String = "OFB"
         public class OFB: CryptoJS{
             override init(){
                 super.init()
@@ -435,7 +436,6 @@ public class CryptoJS{
             }
         }
         
-        var ECB:String = "ECB"
         public class ECB: CryptoJS{
             override init(){
                 super.init()
@@ -460,6 +460,11 @@ public class CryptoJS{
     public class pad: CryptoJS{
         
         var AnsiX923:String = "AnsiX923"
+        var Iso97971:String = "Iso97971"
+        var Iso10126:String = "Iso10126"
+        var ZeroPadding:String = "ZeroPadding"
+        var NoPadding:String = "NoPadding"
+        
         public class AnsiX923: CryptoJS{
             override init(){
                 super.init()
@@ -479,7 +484,6 @@ public class CryptoJS{
             }
         }
         
-        var Iso97971:String = "Iso97971"
         public class Iso97971: CryptoJS{
             override init(){
                 super.init()
@@ -503,7 +507,6 @@ public class CryptoJS{
             }
         }
         
-        var Iso10126:String = "Iso10126"
         public class Iso10126: CryptoJS{
             override init(){
                 super.init()
@@ -523,7 +526,6 @@ public class CryptoJS{
             }
         }
         
-        var ZeroPadding:String = "ZeroPadding"
         public class ZeroPadding: CryptoJS{
             override init(){
                 super.init()
@@ -543,7 +545,6 @@ public class CryptoJS{
             }
         }
         
-        var NoPadding:String = "NoPadding"
         public class NoPadding: CryptoJS{
             override init(){
                 super.init()

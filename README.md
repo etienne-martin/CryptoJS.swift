@@ -30,8 +30,8 @@ let AES = CryptoJS.AES()
 var decrypted = AES.decrypt(encrypted, secretKey: "password123")
 
 // Custom mode and padding
-let ECB = CryptoJS.mode.ECB()
-let Iso97971 = CryptoJS.pad.Iso97971()
+CryptoJS.mode.ECB() // Load custom mode
+CryptoJS.pad.Iso97971() // Load custom padding scheme
 var decrypted = AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 ```
 

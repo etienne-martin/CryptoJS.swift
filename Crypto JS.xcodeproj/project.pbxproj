@@ -115,24 +115,7 @@
 		6F72B0D81B6A8EBA0068287A /* Crypto JS */ = {
 			isa = PBXGroup;
 			children = (
-				6FC3C9571B8C4D3400F4956D /* aes.js */,
-				6FC3C94E1B8C3F8200F4956D /* md5.js */,
-				6FC3C9541B8C431B00F4956D /* sha1.js */,
-				6FFD1EA01B8D4ABF00258DE7 /* sha224.js */,
-				6FC3C9501B8C406000F4956D /* sha256.js */,
-				6FFD1EA21B8D4B6E00258DE7 /* sha384.js */,
-				6FFD1E9E1B8D46DC00258DE7 /* sha512.js */,
-				6FC3C9521B8C426C00F4956D /* sha3.js */,
-				6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */,
-				6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */,
-				6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */,
-				6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */,
-				6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */,
-				6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */,
-				6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */,
-				6FFD1E941B8D323300258DE7 /* pad-iso97971.js */,
-				6FFD1E961B8D341400258DE7 /* pad-iso10126.js */,
-				6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */,
+				6FFD1EA61B8D699100258DE7 /* components */,
 				6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */,
 				6F72B0DD1B6A8EBA0068287A /* ViewController.swift */,
 				6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */,
@@ -167,6 +150,31 @@
 				6F72B0F01B6A8EBA0068287A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FFD1EA61B8D699100258DE7 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				6FC3C9571B8C4D3400F4956D /* aes.js */,
+				6FC3C94E1B8C3F8200F4956D /* md5.js */,
+				6FC3C9541B8C431B00F4956D /* sha1.js */,
+				6FFD1EA01B8D4ABF00258DE7 /* sha224.js */,
+				6FC3C9501B8C406000F4956D /* sha256.js */,
+				6FFD1EA21B8D4B6E00258DE7 /* sha384.js */,
+				6FFD1E9E1B8D46DC00258DE7 /* sha512.js */,
+				6FC3C9521B8C426C00F4956D /* sha3.js */,
+				6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */,
+				6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */,
+				6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */,
+				6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */,
+				6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */,
+				6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */,
+				6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */,
+				6FFD1E941B8D323300258DE7 /* pad-iso97971.js */,
+				6FFD1E961B8D341400258DE7 /* pad-iso10126.js */,
+				6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */,
+			);
+			name = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

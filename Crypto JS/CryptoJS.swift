@@ -1,6 +1,5 @@
 //
-//  Crypto JS.swift
-//  Crypto JS
+//  CryptoJS.swift
 //
 //  Created by Emartin on 2015-08-25.
 //  Copyright (c) 2015 Emartin. All rights reserved.

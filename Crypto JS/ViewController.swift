@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         var encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
         
         // AES encryption with custom mode and padding
-        let ECB = CryptoJS.mode.ECB()
-        let Iso97971 = CryptoJS.pad.Iso97971()
+        CryptoJS.mode.ECB() // Load custom mode
+        CryptoJS.pad.Iso97971() // Load custom padding scheme
         var encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
         
         println(encrypted)

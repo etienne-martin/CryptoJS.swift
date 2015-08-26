@@ -51,8 +51,8 @@ class ViewController: UIViewController {
         println(SHA224.hash("mystring"))
         println(SHA256.hash("mystring"))
         println(SHA384.hash("mystring"))
-        println(SHA3.hash("mystring"))
         println(SHA512.hash("mystring"))
+        println(SHA3.hash("mystring"))
         println(SHA3.hash("mystring",outputLength: 256))
         println(RIPEMD160.hash("mystring"))
         

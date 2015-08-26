@@ -35,12 +35,24 @@ b.keySize,b.ivSize);l.iv=d.iv;b=a.encrypt.call(this,b,c,d.key,l);b.mixIn(d);retu
 d[k>>>24]^e[n>>>16&255]^j[g>>>8&255]^l[h&255]^c[p++],n=d[n>>>24]^e[g>>>16&255]^j[h>>>8&255]^l[k&255]^c[p++],g=q,h=s,k=t;q=(f[g>>>24]<<24|f[h>>>16&255]<<16|f[k>>>8&255]<<8|f[n&255])^c[p++];s=(f[h>>>24]<<24|f[k>>>16&255]<<16|f[n>>>8&255]<<8|f[g&255])^c[p++];t=(f[k>>>24]<<24|f[n>>>16&255]<<16|f[g>>>8&255]<<8|f[h&255])^c[p++];n=(f[n>>>24]<<24|f[g>>>16&255]<<16|f[h>>>8&255]<<8|f[k&255])^c[p++];a[b]=q;a[b+1]=s;a[b+2]=t;a[b+3]=n},keySize:8});u.AES=p._createHelper(d)})();
 
 
-function encrypt(string, masterkey){
-    var iv  = CryptoJS.lib.WordArray.random(masterkey.length);
-    var encrypted = CryptoJS.AES.encrypt(string, masterkey, { iv: iv });
-    return encodeURIComponent(encrypted);
+function encrypt(string, masterkey, options){
+    
+    if( options ){
+        if( options.mode ){
+            options.mode = CryptoJS.mode[options.mode];
+        }
+        if( options.padding ){
+            options.padding = CryptoJS.pad[options.padding];
+        }
+        var encrypted = CryptoJS.AES.encrypt(string, masterkey, options);
+    }else{
+        var encrypted = CryptoJS.AES.encrypt(string, masterkey);
+    }
+    
+    return encrypted;
 }
+
 function decrypt(string, masterkey){
-    var decrypted = CryptoJS.AES.decrypt(decodeURIComponent(string), masterkey);
+    var decrypted = CryptoJS.AES.decrypt(string, masterkey);
     return decrypted.toString(CryptoJS.enc.Utf8);
 }

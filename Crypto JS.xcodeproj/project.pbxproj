@@ -19,6 +19,19 @@
 		6FC3C9531B8C426C00F4956D /* sha3.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9521B8C426C00F4956D /* sha3.js */; };
 		6FC3C9551B8C431B00F4956D /* sha1.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9541B8C431B00F4956D /* sha1.js */; };
 		6FC3C9581B8C4D3400F4956D /* aes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9571B8C4D3400F4956D /* aes.js */; };
+		6FFD1E8B1B8CFDDD00258DE7 /* mode-cfb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */; };
+		6FFD1E8D1B8D2C8E00258DE7 /* pad-ansix923.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */; };
+		6FFD1E8F1B8D2E5400258DE7 /* mode-ctr.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */; };
+		6FFD1E911B8D2F7300258DE7 /* mode-ofb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */; };
+		6FFD1E931B8D2FEF00258DE7 /* mode-ecb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */; };
+		6FFD1E951B8D323300258DE7 /* pad-iso97971.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E941B8D323300258DE7 /* pad-iso97971.js */; };
+		6FFD1E971B8D341400258DE7 /* pad-iso10126.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E961B8D341400258DE7 /* pad-iso10126.js */; };
+		6FFD1E991B8D350400258DE7 /* pad-zeropadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */; };
+		6FFD1E9B1B8D376400258DE7 /* pad-nopadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */; };
+		6FFD1E9F1B8D46DC00258DE7 /* sha512.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E9E1B8D46DC00258DE7 /* sha512.js */; };
+		6FFD1EA11B8D4ABF00258DE7 /* sha224.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1EA01B8D4ABF00258DE7 /* sha224.js */; };
+		6FFD1EA31B8D4B6E00258DE7 /* sha384.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1EA21B8D4B6E00258DE7 /* sha384.js */; };
+		6FFD1EA51B8D4C4D00258DE7 /* ripemd160.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +61,19 @@
 		6FC3C9521B8C426C00F4956D /* sha3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha3.js; sourceTree = "<group>"; };
 		6FC3C9541B8C431B00F4956D /* sha1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha1.js; sourceTree = "<group>"; };
 		6FC3C9571B8C4D3400F4956D /* aes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = aes.js; sourceTree = "<group>"; };
+		6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-cfb.js"; sourceTree = "<group>"; };
+		6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-ansix923.js"; sourceTree = "<group>"; };
+		6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ctr.js"; sourceTree = "<group>"; };
+		6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ofb.js"; sourceTree = "<group>"; };
+		6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ecb.js"; sourceTree = "<group>"; };
+		6FFD1E941B8D323300258DE7 /* pad-iso97971.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-iso97971.js"; sourceTree = "<group>"; };
+		6FFD1E961B8D341400258DE7 /* pad-iso10126.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-iso10126.js"; sourceTree = "<group>"; };
+		6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-zeropadding.js"; sourceTree = "<group>"; };
+		6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-nopadding.js"; sourceTree = "<group>"; };
+		6FFD1E9E1B8D46DC00258DE7 /* sha512.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha512.js; sourceTree = "<group>"; };
+		6FFD1EA01B8D4ABF00258DE7 /* sha224.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha224.js; sourceTree = "<group>"; };
+		6FFD1EA21B8D4B6E00258DE7 /* sha384.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha384.js; sourceTree = "<group>"; };
+		6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ripemd160.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +118,21 @@
 				6FC3C9571B8C4D3400F4956D /* aes.js */,
 				6FC3C94E1B8C3F8200F4956D /* md5.js */,
 				6FC3C9541B8C431B00F4956D /* sha1.js */,
+				6FFD1EA01B8D4ABF00258DE7 /* sha224.js */,
 				6FC3C9501B8C406000F4956D /* sha256.js */,
+				6FFD1EA21B8D4B6E00258DE7 /* sha384.js */,
+				6FFD1E9E1B8D46DC00258DE7 /* sha512.js */,
 				6FC3C9521B8C426C00F4956D /* sha3.js */,
+				6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */,
+				6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */,
+				6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */,
+				6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */,
+				6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */,
+				6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */,
+				6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */,
+				6FFD1E941B8D323300258DE7 /* pad-iso97971.js */,
+				6FFD1E961B8D341400258DE7 /* pad-iso10126.js */,
+				6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */,
 				6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */,
 				6F72B0DD1B6A8EBA0068287A /* ViewController.swift */,
 				6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */,
@@ -210,12 +249,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FFD1E8F1B8D2E5400258DE7 /* mode-ctr.js in Resources */,
 				6FC3C94F1B8C3F8200F4956D /* md5.js in Resources */,
+				6FFD1E8D1B8D2C8E00258DE7 /* pad-ansix923.js in Resources */,
+				6FFD1E931B8D2FEF00258DE7 /* mode-ecb.js in Resources */,
+				6FFD1E971B8D341400258DE7 /* pad-iso10126.js in Resources */,
+				6FFD1E9B1B8D376400258DE7 /* pad-nopadding.js in Resources */,
+				6FFD1EA11B8D4ABF00258DE7 /* sha224.js in Resources */,
+				6FFD1E951B8D323300258DE7 /* pad-iso97971.js in Resources */,
+				6FFD1E991B8D350400258DE7 /* pad-zeropadding.js in Resources */,
+				6FFD1E911B8D2F7300258DE7 /* mode-ofb.js in Resources */,
 				6FC3C9511B8C406000F4956D /* sha256.js in Resources */,
+				6FFD1EA31B8D4B6E00258DE7 /* sha384.js in Resources */,
+				6FFD1E8B1B8CFDDD00258DE7 /* mode-cfb.js in Resources */,
+				6FFD1EA51B8D4C4D00258DE7 /* ripemd160.js in Resources */,
 				6FC3C9581B8C4D3400F4956D /* aes.js in Resources */,
 				6F72B0E11B6A8EBA0068287A /* Main.storyboard in Resources */,
 				6F72B0E61B6A8EBA0068287A /* LaunchScreen.xib in Resources */,
 				6FC3C9531B8C426C00F4956D /* sha3.js in Resources */,
+				6FFD1E9F1B8D46DC00258DE7 /* sha512.js in Resources */,
 				6F72B0E31B6A8EBA0068287A /* Images.xcassets in Resources */,
 				6FC3C9551B8C431B00F4956D /* sha1.js in Resources */,
 			);

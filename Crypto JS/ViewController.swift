@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         // Load only what's necessary
         let AES = CryptoJS.AES()
         
-        // Encrypt AES
+        // AES encryption
         var encrypted = AES.encrypt("secretMessage", secretKey: "password123")
         var encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
         
-        // Encrypt AES with custom mode & padding
+        // AES encryption with custom mode and padding
         let ECB = CryptoJS.mode.ECB()
         let Iso97971 = CryptoJS.pad.Iso97971()
         var encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
@@ -29,11 +29,11 @@ class ViewController: UIViewController {
         println(encrypted2)
         println(encrypted3)
         
-        // Decrypt AES
+        // AES decryption
         println(AES.decrypt(encrypted, secretKey: "password123"))
         println(AES.decrypt(encrypted2, secretKey: "password123"))
         
-        // Decrypt AES with custom mode & padding
+        // AES decryption with custom mode and padding
         println(AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
         
         // Hashers

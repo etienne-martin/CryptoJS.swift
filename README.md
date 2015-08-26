@@ -19,7 +19,7 @@ CryptoJS.pad.Iso97971() // Load custom padding scheme
 var encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 
 // Supported modes: CBC (the default), CFB, CTR, OFB, ECB
-// Supported padding shemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
+// Supported padding schemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
 ```
 
 #### AES decryption

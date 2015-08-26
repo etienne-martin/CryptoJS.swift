@@ -6,37 +6,56 @@ Allows you to share the same crypto between a native iOS/OSX application and a w
 #### AES encryption
 
 ```swift
-// Basic usage
+// Basic encryption
 let AES = CryptoJS.AES()
 var encrypted = AES.encrypt("secretMessage", secretKey: "password123")
 
 // Custom IV
-var encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
+var encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
 
-// Encrypt AES with custom mode and padding
+// Custom mode and padding
 let ECB = CryptoJS.mode.ECB()
 let Iso97971 = CryptoJS.pad.Iso97971()
-var encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+var encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 
 // Supported modes: CBC (the default), CFB, CTR, OFB, ECB
 // Supported padding shemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
+```
+
+#### AES decryption
+
+```swift
+// Basic decryption
+let AES = CryptoJS.AES()
+var decrypted = AES.decrypt(encrypted, secretKey: "password123")
+
+// Custom mode and padding
+let ECB = CryptoJS.mode.ECB()
+let Iso97971 = CryptoJS.pad.Iso97971()
+var decrypted = AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 ```
 
 #### Hashers
 
 ```swift
 let MD5 = CryptoJS.MD5()
-var hash = MD5.hash("mystring")
-
 let SHA1 = CryptoJS.SHA1()
-var hash = SHA1.hash("mystring")
-
+let SHA224 = CryptoJS.SHA224()
 let SHA256 = CryptoJS.SHA256()
-var hash = SHA256.hash("mystring")
-
+let SHA384 = CryptoJS.SHA384()
+let SHA512 = CryptoJS.SHA512()
 let SHA3 = CryptoJS.SHA3()
+let RIPEMD160 = CryptoJS.RIPEMD160()
+
+var hash = MD5.hash("mystring")
+var hash = SHA1.hash("mystring")
+var hash = SHA224.hash("mystring")
+var hash = SHA256.hash("mystring")
+var hash = SHA384.hash("mystring")
 var hash = SHA3.hash("mystring")
-var hash = SHA3.hash("mystring", outputLength: 256)
+var hash = SHA512.hash("mystring")
+var hash = SHA3.hash("mystring",outputLength: 256)
+var hash = RIPEMD160.hash("mystring")
 ```
 
 ######Feel free to contribute!

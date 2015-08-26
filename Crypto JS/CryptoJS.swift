@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import JavaScriptCore
 
 private var cryptoJScontext = JSContext()

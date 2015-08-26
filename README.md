@@ -3,12 +3,23 @@ Cross device cryptography in swift using the [Crypto JS library](https://code.go
 
 Allows you to share the same crypto between a native iOS/OSX application and a web application.
 
-#### AES encrypt/decrypt
+#### AES encryption
 
 ```swift
+// Basic usage
 let AES = CryptoJS.AES()
 var encrypted = AES.encrypt("secretMessage", secretKey: "password123")
-var decrypted = AES.decrypt(encrypted, secretKey: "password123")
+
+// Custom IV
+var encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
+
+// Encrypt AES with custom mode and padding
+let ECB = CryptoJS.mode.ECB()
+let Iso97971 = CryptoJS.pad.Iso97971()
+var encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+
+// Supported modes: CBC (the default), CFB, CTR, OFB, ECB
+// Supported padding shemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
 ```
 
 #### Hashers

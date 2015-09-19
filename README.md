@@ -36,7 +36,7 @@ var decrypted = AES.decrypt(encrypted, secretKey: "password123")
 // Custom mode and padding
 CryptoJS.mode.ECB() // Load custom mode
 CryptoJS.pad.Iso97971() // Load custom padding scheme
-var decrypted = AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+var decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 ```
 
 #### Hashers

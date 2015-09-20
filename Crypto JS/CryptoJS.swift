@@ -24,24 +24,23 @@ public class CryptoJS{
             let cryptoJSpath = NSBundle.mainBundle().pathForResource("aes", ofType: "js")
             
             if(( cryptoJSpath ) != nil){
-            
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded aes.js")
-                    
+                //let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding: NSUTF8StringEncoding)
+                    print("Loaded aes.js")
+                        
                     // Evaluate aes.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     encryptFunction = cryptoJScontext.objectForKeyedSubscript("encrypt")
                     decryptFunction = cryptoJScontext.objectForKeyedSubscript("decrypt")
-                }else{
-                    println("Unable to load aes.js")
                 }
-                
+                catch {
+                    print("Unable to load aes.js")
+                }
             }else{
-                println("Unable to find aes.js")
+                print("Unable to find aes.js")
             }
             
         }
@@ -75,22 +74,23 @@ public class CryptoJS{
             
             if(( cryptoJSpath ) != nil){
                 
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded md5.js")
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded md5.js")
+                        
                     // Evaluate md5.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.MD5 = cryptoJScontext.objectForKeyedSubscript("MD5")
-                }else{
-                    println("Unable to load md5.js")
+                }
+                catch {
+                    print("Unable to load md5.js")
                 }
                 
             }else{
-                println("Unable to find md5.js")
+                print("Unable to find md5.js")
             }
             
         }
@@ -113,22 +113,23 @@ public class CryptoJS{
             
             if(( cryptoJSpath ) != nil){
                 
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded sha1.js")
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded sha1.js")
+                        
                     // Evaluate sha1.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.SHA1 = cryptoJScontext.objectForKeyedSubscript("SHA1")
-                }else{
-                    println("Unable to load sha1.js")
+                }
+                catch {
+                    print("Unable to load sha1.js")
                 }
                 
             }else{
-                println("Unable to find sha1.js")
+                print("Unable to find sha1.js")
             }
             
         }
@@ -151,22 +152,23 @@ public class CryptoJS{
             
             if(( cryptoJSpath ) != nil){
                 
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded sha224.js")
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded sha224.js")
+                        
                     // Evaluate sha224.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.SHA224 = cryptoJScontext.objectForKeyedSubscript("SHA224")
-                }else{
-                    println("Unable to load sha224.js")
+                }
+                catch {
+                    print("Unable to load sha224.js")
                 }
                 
             }else{
-                println("Unable to find sha224.js")
+                print("Unable to find sha224.js")
             }
             
         }
@@ -189,22 +191,23 @@ public class CryptoJS{
             
             if(( cryptoJSpath ) != nil){
                 
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded sha256.js")
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded sha256.js")
+                        
                     // Evaluate sha256.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.SHA256 = cryptoJScontext.objectForKeyedSubscript("SHA256")
-                }else{
-                    println("Unable to load sha256.js")
+                }
+                catch {
+                    print("Unable to load sha256.js")
                 }
                 
             }else{
-                println("Unable to find sha256.js")
+                print("Unable to find sha256.js")
             }
             
         }
@@ -226,23 +229,24 @@ public class CryptoJS{
             let cryptoJSpath = NSBundle.mainBundle().pathForResource("sha384", ofType: "js")
             
             if(( cryptoJSpath ) != nil){
-                
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded sha384.js")
+    
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded sha384.js")
+                        
                     // Evaluate sha384.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.SHA384 = cryptoJScontext.objectForKeyedSubscript("SHA384")
-                }else{
-                    println("Unable to load sha384.js")
+                }
+                catch {
+                    print("Unable to load sha384.js")
                 }
                 
             }else{
-                println("Unable to find sha384.js")
+                print("Unable to find sha384.js")
             }
             
         }
@@ -264,23 +268,23 @@ public class CryptoJS{
             let cryptoJSpath = NSBundle.mainBundle().pathForResource("sha512", ofType: "js")
             
             if(( cryptoJSpath ) != nil){
-                
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded sha512.js")
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded sha512.js")
+                        
                     // Evaluate sha512.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.SHA512 = cryptoJScontext.objectForKeyedSubscript("SHA512")
-                }else{
-                    println("Unable to load sha512.js")
+                }
+                catch {
+                    print("Unable to load sha512.js")
                 }
                 
             }else{
-                println("Unable to find sha512.js")
+                print("Unable to find sha512.js")
             }
             
         }
@@ -302,21 +306,21 @@ public class CryptoJS{
             let cryptoJSpath = NSBundle.mainBundle().pathForResource("sha3", ofType: "js")
             
             if(( cryptoJSpath ) != nil){
-                
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded sha3.js")
+            
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded sha3.js")
+                        
                     // Evaluate sha3.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.SHA3 = cryptoJScontext.objectForKeyedSubscript("SHA3")
-                }else{
-                    println("Unable to load sha3.js")
                 }
-                
+                catch {
+                    print("Unable to load sha3.js")
+                }
             }
             
         }
@@ -343,18 +347,19 @@ public class CryptoJS{
             
             if(( cryptoJSpath ) != nil){
                 
-                let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                
-                if(( cryptoJS ) != nil){
-                    println("Loaded ripemd160.js")
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
                     
+                    print("Loaded ripemd160.js")
+                        
                     // Evaluate ripemd160.js
                     cryptoJScontext.evaluateScript(cryptoJS)
-                    
+                        
                     // Reference functions
                     self.RIPEMD160 = cryptoJScontext.objectForKeyedSubscript("RIPEMD160")
-                }else{
-                    println("Unable to load ripemd160.js")
+                }
+                catch {
+                    print("Unable to load ripemd160.js")
                 }
                 
             }
@@ -385,13 +390,14 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("mode-\(CryptoJS.mode().CFB.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded mode-\(CryptoJS.mode().CFB).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded mode-\(CryptoJS.mode().CFB).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load mode-\(CryptoJS.mode().CFB).js")
+                    }
+                    catch {
+                        print("Unable to load mode-\(CryptoJS.mode().CFB).js")
                     }
                 }
             }
@@ -403,13 +409,14 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("mode-\(CryptoJS.mode().CTR.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded mode-\(CryptoJS.mode().CTR).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded mode-\(CryptoJS.mode().CTR).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load mode-\(CryptoJS.mode().CTR).js")
+                    }
+                    catch {
+                        print("Unable to load mode-\(CryptoJS.mode().CTR).js")
                     }
                 }
             }
@@ -422,13 +429,14 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("mode-\(CryptoJS.mode().OFB.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded mode-\(CryptoJS.mode().OFB).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded mode-\(CryptoJS.mode().OFB).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load mode-\(CryptoJS.mode().OFB).js")
+                    }
+                    catch {
+                        print("Unable to load mode-\(CryptoJS.mode().OFB).js")
                     }
                 }
             }
@@ -441,18 +449,18 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("mode-\(CryptoJS.mode().ECB.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded mode-\(CryptoJS.mode().ECB).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded mode-\(CryptoJS.mode().ECB).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load mode-\(CryptoJS.mode().ECB).js")
+                    }
+                    catch {
+                        print("Unable to load mode-\(CryptoJS.mode().ECB).js")
                     }
                 }
             }
         }
-        
     }
     
     public class pad: CryptoJS{
@@ -470,13 +478,14 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("pad-\(CryptoJS.pad().AnsiX923.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded pad-\(CryptoJS.pad().AnsiX923).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded pad-\(CryptoJS.pad().AnsiX923).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load pad-\(CryptoJS.pad().AnsiX923).js")
+                    }
+                    catch {
+                        print("Unable to load pad-\(CryptoJS.pad().AnsiX923).js")
                     }
                 }
             }
@@ -493,13 +502,14 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("pad-\(CryptoJS.pad().Iso97971.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded pad-\(CryptoJS.pad().Iso97971).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded pad-\(CryptoJS.pad().Iso97971).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load pad-\(CryptoJS.pad().Iso97971).js")
+                    }
+                    catch {
+                        print("Unable to load pad-\(CryptoJS.pad().Iso97971).js")
                     }
                 }
             }
@@ -512,13 +522,14 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("pad-\(CryptoJS.pad().Iso10126.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded pad-\(CryptoJS.pad().Iso10126).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded pad-\(CryptoJS.pad().Iso10126).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load pad-\(CryptoJS.pad().Iso10126).js")
+                    }
+                    catch {
+                        print("Unable to load pad-\(CryptoJS.pad().Iso10126).js")
                     }
                 }
             }
@@ -531,13 +542,14 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("pad-\(CryptoJS.pad().ZeroPadding.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded pad-\(CryptoJS.pad().ZeroPadding).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded pad-\(CryptoJS.pad().ZeroPadding).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load pad-\(CryptoJS.pad().ZeroPadding).js")
+                    }
+                    catch {
+                        print("Unable to load pad-\(CryptoJS.pad().ZeroPadding).js")
                     }
                 }
             }
@@ -550,18 +562,18 @@ public class CryptoJS{
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("pad-\(CryptoJS.pad().NoPadding.lowercaseString)", ofType: "js")
                 
                 if(( cryptoJSpath ) != nil){
-                    let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
-                    if(( cryptoJS ) != nil){
-                        println("Loaded pad-\(CryptoJS.pad().NoPadding).js")
+                    do {
+                        let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding)
+                        print("Loaded pad-\(CryptoJS.pad().NoPadding).js")
                         // Evaluate script
                         cryptoJScontext.evaluateScript(cryptoJS)
-                    }else{
-                        println("Unable to load pad-\(CryptoJS.pad().NoPadding).js")
+                    }
+                    catch {
+                        print("Unable to load pad-\(CryptoJS.pad().NoPadding).js")
                     }
                 }
             }
         }
-        
     }
     
 }

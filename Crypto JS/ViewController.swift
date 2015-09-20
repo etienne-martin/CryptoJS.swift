@@ -17,24 +17,24 @@ class ViewController: UIViewController {
         let AES = CryptoJS.AES()
         
         // AES encryption
-        var encrypted = AES.encrypt("secretMessage", secretKey: "password123")
-        var encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
+        let encrypted = AES.encrypt("secretMessage", secretKey: "password123")
+        let encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
         
         // AES encryption with custom mode and padding
-        CryptoJS.mode.ECB() // Load custom mode
-        CryptoJS.pad.Iso97971() // Load custom padding scheme
-        var encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+        _ = CryptoJS.mode.ECB() // Load custom mode
+        _ = CryptoJS.pad.Iso97971() // Load custom padding scheme
+        let encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
         
-        println(encrypted)
-        println(encrypted2)
-        println(encrypted3)
+        print(encrypted)
+        print(encrypted2)
+        print(encrypted3)
         
         // AES decryption
-        println(AES.decrypt(encrypted, secretKey: "password123"))
-        println(AES.decrypt(encrypted2, secretKey: "password123"))
+        print(AES.decrypt(encrypted, secretKey: "password123"))
+        print(AES.decrypt(encrypted2, secretKey: "password123"))
         
         // AES decryption with custom mode and padding
-        println(AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
+        print(AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
         
         // Hashers
         let MD5 = CryptoJS.MD5()
@@ -46,15 +46,15 @@ class ViewController: UIViewController {
         let SHA3 = CryptoJS.SHA3()
         let RIPEMD160 = CryptoJS.RIPEMD160()
         
-        println(MD5.hash("mystring"))
-        println(SHA1.hash("mystring"))
-        println(SHA224.hash("mystring"))
-        println(SHA256.hash("mystring"))
-        println(SHA384.hash("mystring"))
-        println(SHA512.hash("mystring"))
-        println(SHA3.hash("mystring"))
-        println(SHA3.hash("mystring",outputLength: 256))
-        println(RIPEMD160.hash("mystring"))
+        print(MD5.hash("mystring"))
+        print(SHA1.hash("mystring"))
+        print(SHA224.hash("mystring"))
+        print(SHA256.hash("mystring"))
+        print(SHA384.hash("mystring"))
+        print(SHA512.hash("mystring"))
+        print(SHA3.hash("mystring"))
+        print(SHA3.hash("mystring",outputLength: 256))
+        print(RIPEMD160.hash("mystring"))
         
     }
 

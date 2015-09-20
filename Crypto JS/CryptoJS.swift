@@ -496,7 +496,7 @@ public class CryptoJS{
                 super.init()
                 
                 // Load dependencies
-                let ZeroPadding = CryptoJS.pad.ZeroPadding()
+                _ = CryptoJS.pad.ZeroPadding()
                 
                 // Retrieve the content of the script
                 let cryptoJSpath = NSBundle.mainBundle().pathForResource("pad-\(CryptoJS.pad().Iso97971.lowercaseString)", ofType: "js")

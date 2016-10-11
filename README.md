@@ -16,10 +16,10 @@ let AES = CryptoJS.AES()
 // Basic AES encryption
 let encrypted = AES.encrypt("secretMessage", secretKey: "password123")
 
-// Encryption with custom IV
+// AES encryption with custom IV
 let encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
 
-// Encryption with custom mode and padding
+// AES encryption with custom mode and padding
 CryptoJS.mode.ECB() // Load custom mode
 CryptoJS.pad.Iso97971() // Load custom padding scheme
 let encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
@@ -27,7 +27,7 @@ let encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[
 // Basic AES decryption
 let decrypted = AES.decrypt(encrypted, secretKey: "password123")
 
-// Decryption with custom mode and padding
+// AES decryption with custom mode and padding
 let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 
 // Supported modes: CBC (the default), CFB, CTR, OFB, ECB

@@ -81,14 +81,55 @@ public class CryptoJS{
                     cryptoJScontext.evaluateScript(cryptoJS)
                     
                     // Reference functions
-                    encryptFunction = cryptoJScontext.objectForKeyedSubscript("encrypt")
-                    decryptFunction = cryptoJScontext.objectForKeyedSubscript("decrypt")
+                    encryptFunction = cryptoJScontext.objectForKeyedSubscript("encryptTripleDES")
+                    decryptFunction = cryptoJScontext.objectForKeyedSubscript("decryptTripleDES")
                 }
                 catch {
                     print("Unable to load tripledes.js")
                 }
             }else{
                 print("Unable to find tripledes.js")
+            }
+            
+        }
+        
+        public func encrypt(secretMessage: String,secretKey: String)->String {
+            return "\(encryptFunction.callWithArguments([secretMessage, secretKey]))"
+        }
+        public func decrypt(encryptedMessage: String,secretKey: String)->String {
+            return "\(decryptFunction.callWithArguments([encryptedMessage, secretKey]))"
+        }
+        
+    }
+    
+    public class DES: CryptoJS{
+        
+        private var encryptFunction: JSValue!
+        private var decryptFunction: JSValue!
+        
+        override init(){
+            super.init()
+            
+            // Retrieve the content of tripledes.js
+            let cryptoJSpath = NSBundle.mainBundle().pathForResource("tripledes", ofType: "js")
+            
+            if(( cryptoJSpath ) != nil){
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding: NSUTF8StringEncoding)
+                    print("Loaded tripledes.js (DES)")
+                    
+                    // Evaluate tripledes.js
+                    cryptoJScontext.evaluateScript(cryptoJS)
+                    
+                    // Reference functions
+                    encryptFunction = cryptoJScontext.objectForKeyedSubscript("encryptDES")
+                    decryptFunction = cryptoJScontext.objectForKeyedSubscript("decryptDES")
+                }
+                catch {
+                    print("Unable to load tripledes.js (DES)")
+                }
+            }else{
+                print("Unable to find tripledes.js (DES)")
             }
             
         }

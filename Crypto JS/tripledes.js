@@ -25,16 +25,30 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               d[k])&t[k])>>>0];this._lBlock=h;this._rBlock=e^g}a=this._lBlock;this._lBlock=this._rBlock;this._rBlock=a;j.call(this,1,1431655765);l.call(this,8,16711935);l.call(this,2,858993459);j.call(this,16,65535);j.call(this,4,252645135);b[c]=this._lBlock;b[c+1]=this._rBlock},keySize:2,ivSize:2,blockSize:2});h.DES=e._createHelper(m);g=g.TripleDES=e.extend({_doReset:function(){var b=this._key.words;this._des1=m.createEncryptor(n.create(b.slice(0,2)));this._des2=m.createEncryptor(n.create(b.slice(2,4)));this._des3=
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          m.createEncryptor(n.create(b.slice(4,6)))},encryptBlock:function(b,c){this._des1.encryptBlock(b,c);this._des2.decryptBlock(b,c);this._des3.encryptBlock(b,c)},decryptBlock:function(b,c){this._des3.decryptBlock(b,c);this._des2.encryptBlock(b,c);this._des1.decryptBlock(b,c)},keySize:6,ivSize:2,blockSize:2});h.TripleDES=e._createHelper(g)})();
 
-function encrypt(string, masterkey){
+function encryptTripleDES(string, masterkey){
     
     var encrypted = CryptoJS.TripleDES.encrypt(string, masterkey);
     
     return encrypted;
 }
 
-function decrypt(string, masterkey){
+function decryptTripleDES(string, masterkey){
     
     var decrypted = CryptoJS.TripleDES.decrypt(string, masterkey).toString(CryptoJS.enc.Utf8);
+    
+    return decrypted;
+}
+
+function encryptDES(string, masterkey){
+    
+    var encrypted = CryptoJS.DES.encrypt(string, masterkey);
+    
+    return encrypted;
+}
+
+function decryptDES(string, masterkey){
+    
+    var decrypted = CryptoJS.DES.decrypt(string, masterkey).toString(CryptoJS.enc.Utf8);
     
     return decrypted;
 }

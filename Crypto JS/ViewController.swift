@@ -47,6 +47,17 @@ class ViewController: UIViewController {
         // TripleDES decryption
         print(TripleDES.decrypt(TripleDESencrypted, secretKey: "password123"))
         
+        // Load DES
+        let DES = CryptoJS.DES()
+        
+        // TripleDES encryption
+        let DESencrypted = DES.encrypt("secretMessage", secretKey: "password123")
+        
+        print(DESencrypted)
+        
+        // TripleDES decryption
+        print(DES.decrypt(DESencrypted, secretKey: "password123"))
+        
         
         // Hashers
         let MD5 = CryptoJS.MD5()

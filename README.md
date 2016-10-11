@@ -47,6 +47,19 @@ let encrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
 let decrypted = TripleDES.decrypt(encrypted, secretKey: "password123")
 ```
 
+#### DES
+
+```swift
+// Load the DES module
+let DES = CryptoJS.DES()
+
+// Basic DES encryption
+let encrypted = DES.encrypt("secretMessage", secretKey: "password123")
+
+// Basic TripleDES decryption
+let decrypted = DES.decrypt(encrypted, secretKey: "password123")
+```
+
 #### Hashers
 
 ```swift

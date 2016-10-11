@@ -56,7 +56,7 @@ let DES = CryptoJS.DES()
 // Basic DES encryption
 let encrypted = DES.encrypt("secretMessage", secretKey: "password123")
 
-// Basic TripleDES decryption
+// Basic DES decryption
 let decrypted = DES.decrypt(encrypted, secretKey: "password123")
 ```
 

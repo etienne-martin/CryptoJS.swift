@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F17BDA81DAC931700FA4263 /* tripledes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F17BDA71DAC931700FA4263 /* tripledes.js */; };
 		6F72B0DC1B6A8EBA0068287A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */; };
 		6F72B0DE1B6A8EBA0068287A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72B0DD1B6A8EBA0068287A /* ViewController.swift */; };
 		6F72B0E11B6A8EBA0068287A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F72B0DF1B6A8EBA0068287A /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F17BDA71DAC931700FA4263 /* tripledes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tripledes.js; sourceTree = "<group>"; };
 		6F72B0D61B6A8EBA0068287A /* Crypto JS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto JS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F72B0DA1B6A8EBA0068287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */,
 				6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */,
 				6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */,
+				6F17BDA71DAC931700FA4263 /* tripledes.js */,
 				6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */,
 				6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */,
 				6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */,
@@ -280,6 +283,7 @@
 				6FFD1E9F1B8D46DC00258DE7 /* sha512.js in Resources */,
 				6F72B0E31B6A8EBA0068287A /* Images.xcassets in Resources */,
 				6FC3C9551B8C431B00F4956D /* sha1.js in Resources */,
+				6F17BDA81DAC931700FA4263 /* tripledes.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

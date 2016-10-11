@@ -24,7 +24,6 @@ public class CryptoJS{
             let cryptoJSpath = NSBundle.mainBundle().pathForResource("aes", ofType: "js")
             
             if(( cryptoJSpath ) != nil){
-                //let cryptoJS = String(contentsOfFile: cryptoJSpath!, encoding:NSUTF8StringEncoding, error: nil)
                 do {
                     let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding: NSUTF8StringEncoding)
                     print("Loaded aes.js")
@@ -58,6 +57,47 @@ public class CryptoJS{
             }else{
                 return "\(decryptFunction.callWithArguments([encryptedMessage, secretKey]))"
             }
+        }
+        
+    }
+    
+    public class TripleDES: CryptoJS{
+        
+        private var encryptFunction: JSValue!
+        private var decryptFunction: JSValue!
+        
+        override init(){
+            super.init()
+            
+            // Retrieve the content of tripledes.js
+            let cryptoJSpath = NSBundle.mainBundle().pathForResource("tripledes", ofType: "js")
+            
+            if(( cryptoJSpath ) != nil){
+                do {
+                    let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding: NSUTF8StringEncoding)
+                    print("Loaded tripledes.js")
+                    
+                    // Evaluate tripledes.js
+                    cryptoJScontext.evaluateScript(cryptoJS)
+                    
+                    // Reference functions
+                    encryptFunction = cryptoJScontext.objectForKeyedSubscript("encrypt")
+                    decryptFunction = cryptoJScontext.objectForKeyedSubscript("decrypt")
+                }
+                catch {
+                    print("Unable to load tripledes.js")
+                }
+            }else{
+                print("Unable to find tripledes.js")
+            }
+            
+        }
+        
+        public func encrypt(secretMessage: String,secretKey: String)->String {
+            return "\(encryptFunction.callWithArguments([secretMessage, secretKey]))"
+        }
+        public func decrypt(encryptedMessage: String,secretKey: String)->String {
+            return "\(decryptFunction.callWithArguments([encryptedMessage, secretKey]))"
         }
         
     }

@@ -36,6 +36,18 @@ class ViewController: UIViewController {
         // AES decryption with custom mode and padding
         print(AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
         
+        // Load TripleDES
+        let TripleDES = CryptoJS.TripleDES()
+        
+        // TripleDES encryption
+        let TripleDESencrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
+        
+        print(TripleDESencrypted)
+        
+        // TripleDES decryption
+        print(TripleDES.decrypt(TripleDESencrypted, secretKey: "password123"))
+        
+        
         // Hashers
         let MD5 = CryptoJS.MD5()
         let SHA1 = CryptoJS.SHA1()

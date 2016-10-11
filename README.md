@@ -12,15 +12,15 @@ Drag and drop CryptoJS.swift and the .js files in your Xcode project.
 ```swift
 // Basic encryption
 let AES = CryptoJS.AES()
-var encrypted = AES.encrypt("secretMessage", secretKey: "password123")
+let encrypted = AES.encrypt("secretMessage", secretKey: "password123")
 
 // Custom IV
-var encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
+let encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
 
 // Custom mode and padding
 CryptoJS.mode.ECB() // Load custom mode
 CryptoJS.pad.Iso97971() // Load custom padding scheme
-var encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+let encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 
 // Supported modes: CBC (the default), CFB, CTR, OFB, ECB
 // Supported padding schemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
@@ -31,12 +31,25 @@ var encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[
 ```swift
 // Basic decryption
 let AES = CryptoJS.AES()
-var decrypted = AES.decrypt(encrypted, secretKey: "password123")
+let decrypted = AES.decrypt(encrypted, secretKey: "password123")
 
 // Custom mode and padding
 CryptoJS.mode.ECB() // Load custom mode
 CryptoJS.pad.Iso97971() // Load custom padding scheme
-var decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+```
+
+#### TripleDES encryption
+
+```swift
+let TripleDES = CryptoJS.TripleDES()
+let encrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
+```
+
+#### TripleDES decryption
+
+```swift
+let decrypted = TripleDES.decrypt(encrypted, secretKey: "password123")
 ```
 
 #### Hashers

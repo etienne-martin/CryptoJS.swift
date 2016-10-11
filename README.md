@@ -7,48 +7,43 @@ Allows you to share the same crypto between a native iOS/OSX application and a w
 
 Drag and drop CryptoJS.swift and the .js files in your Xcode project.
 
-#### AES encryption
+#### AES
 
 ```swift
-// Basic encryption
+// Load the AES module
 let AES = CryptoJS.AES()
+
+// Basic AES encryption
 let encrypted = AES.encrypt("secretMessage", secretKey: "password123")
 
-// Custom IV
+// Encryption with custom IV
 let encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
 
-// Custom mode and padding
+// Encryption with custom mode and padding
 CryptoJS.mode.ECB() // Load custom mode
 CryptoJS.pad.Iso97971() // Load custom padding scheme
 let encrypted = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+
+// Basic AES decryption
+let decrypted = AES.decrypt(encrypted, secretKey: "password123")
+
+// Decryption with custom mode and padding
+let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 
 // Supported modes: CBC (the default), CFB, CTR, OFB, ECB
 // Supported padding schemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
 ```
 
-#### AES decryption
+#### TripleDES
 
 ```swift
-// Basic decryption
-let AES = CryptoJS.AES()
-let decrypted = AES.decrypt(encrypted, secretKey: "password123")
-
-// Custom mode and padding
-CryptoJS.mode.ECB() // Load custom mode
-CryptoJS.pad.Iso97971() // Load custom padding scheme
-let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
-```
-
-#### TripleDES encryption
-
-```swift
+// Load the TripleDES module
 let TripleDES = CryptoJS.TripleDES()
+
+// Basic TripleDES encryption
 let encrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
-```
 
-#### TripleDES decryption
-
-```swift
+// Basic TripleDES decryption
 let decrypted = TripleDES.decrypt(encrypted, secretKey: "password123")
 ```
 

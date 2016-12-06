@@ -7,46 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F17BDA81DAC931700FA4263 /* tripledes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F17BDA71DAC931700FA4263 /* tripledes.js */; };
 		6F72B0DC1B6A8EBA0068287A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */; };
 		6F72B0DE1B6A8EBA0068287A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72B0DD1B6A8EBA0068287A /* ViewController.swift */; };
 		6F72B0E11B6A8EBA0068287A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F72B0DF1B6A8EBA0068287A /* Main.storyboard */; };
 		6F72B0E31B6A8EBA0068287A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F72B0E21B6A8EBA0068287A /* Images.xcassets */; };
 		6F72B0E61B6A8EBA0068287A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F72B0E41B6A8EBA0068287A /* LaunchScreen.xib */; };
-		6F72B0F21B6A8EBA0068287A /* Crypto_JSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72B0F11B6A8EBA0068287A /* Crypto_JSTests.swift */; };
+		6F9AA8E91DF63B47009BAD95 /* aes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8D61DF63B47009BAD95 /* aes.js */; };
+		6F9AA8EA1DF63B47009BAD95 /* md5.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8D71DF63B47009BAD95 /* md5.js */; };
+		6F9AA8EB1DF63B47009BAD95 /* mode-cfb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8D81DF63B47009BAD95 /* mode-cfb.js */; };
+		6F9AA8EC1DF63B47009BAD95 /* mode-ctr.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8D91DF63B47009BAD95 /* mode-ctr.js */; };
+		6F9AA8ED1DF63B47009BAD95 /* mode-ecb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8DA1DF63B47009BAD95 /* mode-ecb.js */; };
+		6F9AA8EE1DF63B47009BAD95 /* mode-ofb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8DB1DF63B47009BAD95 /* mode-ofb.js */; };
+		6F9AA8EF1DF63B47009BAD95 /* pad-ansix923.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8DC1DF63B47009BAD95 /* pad-ansix923.js */; };
+		6F9AA8F01DF63B47009BAD95 /* pad-iso10126.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8DD1DF63B47009BAD95 /* pad-iso10126.js */; };
+		6F9AA8F11DF63B47009BAD95 /* pad-iso97971.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8DE1DF63B47009BAD95 /* pad-iso97971.js */; };
+		6F9AA8F21DF63B47009BAD95 /* pad-nopadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8DF1DF63B47009BAD95 /* pad-nopadding.js */; };
+		6F9AA8F31DF63B47009BAD95 /* pad-zeropadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E01DF63B47009BAD95 /* pad-zeropadding.js */; };
+		6F9AA8F41DF63B47009BAD95 /* ripemd160.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E11DF63B47009BAD95 /* ripemd160.js */; };
+		6F9AA8F51DF63B47009BAD95 /* sha1.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E21DF63B47009BAD95 /* sha1.js */; };
+		6F9AA8F61DF63B47009BAD95 /* sha3.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E31DF63B47009BAD95 /* sha3.js */; };
+		6F9AA8F71DF63B47009BAD95 /* sha224.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E41DF63B47009BAD95 /* sha224.js */; };
+		6F9AA8F81DF63B47009BAD95 /* sha256.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E51DF63B47009BAD95 /* sha256.js */; };
+		6F9AA8F91DF63B47009BAD95 /* sha384.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E61DF63B47009BAD95 /* sha384.js */; };
+		6F9AA8FA1DF63B47009BAD95 /* sha512.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E71DF63B47009BAD95 /* sha512.js */; };
+		6F9AA8FB1DF63B47009BAD95 /* tripledes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E81DF63B47009BAD95 /* tripledes.js */; };
 		6FC3C94B1B8C2EC500F4956D /* CryptoJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */; };
-		6FC3C94F1B8C3F8200F4956D /* md5.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C94E1B8C3F8200F4956D /* md5.js */; };
-		6FC3C9511B8C406000F4956D /* sha256.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9501B8C406000F4956D /* sha256.js */; };
-		6FC3C9531B8C426C00F4956D /* sha3.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9521B8C426C00F4956D /* sha3.js */; };
-		6FC3C9551B8C431B00F4956D /* sha1.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9541B8C431B00F4956D /* sha1.js */; };
-		6FC3C9581B8C4D3400F4956D /* aes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3C9571B8C4D3400F4956D /* aes.js */; };
-		6FFD1E8B1B8CFDDD00258DE7 /* mode-cfb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */; };
-		6FFD1E8D1B8D2C8E00258DE7 /* pad-ansix923.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */; };
-		6FFD1E8F1B8D2E5400258DE7 /* mode-ctr.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */; };
-		6FFD1E911B8D2F7300258DE7 /* mode-ofb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */; };
-		6FFD1E931B8D2FEF00258DE7 /* mode-ecb.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */; };
-		6FFD1E951B8D323300258DE7 /* pad-iso97971.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E941B8D323300258DE7 /* pad-iso97971.js */; };
-		6FFD1E971B8D341400258DE7 /* pad-iso10126.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E961B8D341400258DE7 /* pad-iso10126.js */; };
-		6FFD1E991B8D350400258DE7 /* pad-zeropadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */; };
-		6FFD1E9B1B8D376400258DE7 /* pad-nopadding.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */; };
-		6FFD1E9F1B8D46DC00258DE7 /* sha512.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1E9E1B8D46DC00258DE7 /* sha512.js */; };
-		6FFD1EA11B8D4ABF00258DE7 /* sha224.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1EA01B8D4ABF00258DE7 /* sha224.js */; };
-		6FFD1EA31B8D4B6E00258DE7 /* sha384.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1EA21B8D4B6E00258DE7 /* sha384.js */; };
-		6FFD1EA51B8D4C4D00258DE7 /* ripemd160.js in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6F72B0EC1B6A8EBA0068287A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6F72B0CE1B6A8EBA0068287A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F72B0D51B6A8EBA0068287A;
-			remoteInfo = "Crypto JS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		6F17BDA71DAC931700FA4263 /* tripledes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tripledes.js; sourceTree = "<group>"; };
 		6F72B0D61B6A8EBA0068287A /* Crypto JS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto JS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F72B0DA1B6A8EBA0068287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,39 +42,30 @@
 		6F72B0E01B6A8EBA0068287A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F72B0E21B6A8EBA0068287A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F72B0E51B6A8EBA0068287A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6F72B0EB1B6A8EBA0068287A /* Crypto JSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto JSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F72B0F01B6A8EBA0068287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F72B0F11B6A8EBA0068287A /* Crypto_JSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_JSTests.swift; sourceTree = "<group>"; };
+		6F9AA8D61DF63B47009BAD95 /* aes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = aes.js; path = components/aes.js; sourceTree = "<group>"; };
+		6F9AA8D71DF63B47009BAD95 /* md5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = md5.js; path = components/md5.js; sourceTree = "<group>"; };
+		6F9AA8D81DF63B47009BAD95 /* mode-cfb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "mode-cfb.js"; path = "components/mode-cfb.js"; sourceTree = "<group>"; };
+		6F9AA8D91DF63B47009BAD95 /* mode-ctr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "mode-ctr.js"; path = "components/mode-ctr.js"; sourceTree = "<group>"; };
+		6F9AA8DA1DF63B47009BAD95 /* mode-ecb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "mode-ecb.js"; path = "components/mode-ecb.js"; sourceTree = "<group>"; };
+		6F9AA8DB1DF63B47009BAD95 /* mode-ofb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "mode-ofb.js"; path = "components/mode-ofb.js"; sourceTree = "<group>"; };
+		6F9AA8DC1DF63B47009BAD95 /* pad-ansix923.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "pad-ansix923.js"; path = "components/pad-ansix923.js"; sourceTree = "<group>"; };
+		6F9AA8DD1DF63B47009BAD95 /* pad-iso10126.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "pad-iso10126.js"; path = "components/pad-iso10126.js"; sourceTree = "<group>"; };
+		6F9AA8DE1DF63B47009BAD95 /* pad-iso97971.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "pad-iso97971.js"; path = "components/pad-iso97971.js"; sourceTree = "<group>"; };
+		6F9AA8DF1DF63B47009BAD95 /* pad-nopadding.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "pad-nopadding.js"; path = "components/pad-nopadding.js"; sourceTree = "<group>"; };
+		6F9AA8E01DF63B47009BAD95 /* pad-zeropadding.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "pad-zeropadding.js"; path = "components/pad-zeropadding.js"; sourceTree = "<group>"; };
+		6F9AA8E11DF63B47009BAD95 /* ripemd160.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ripemd160.js; path = components/ripemd160.js; sourceTree = "<group>"; };
+		6F9AA8E21DF63B47009BAD95 /* sha1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha1.js; path = components/sha1.js; sourceTree = "<group>"; };
+		6F9AA8E31DF63B47009BAD95 /* sha3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha3.js; path = components/sha3.js; sourceTree = "<group>"; };
+		6F9AA8E41DF63B47009BAD95 /* sha224.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha224.js; path = components/sha224.js; sourceTree = "<group>"; };
+		6F9AA8E51DF63B47009BAD95 /* sha256.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha256.js; path = components/sha256.js; sourceTree = "<group>"; };
+		6F9AA8E61DF63B47009BAD95 /* sha384.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha384.js; path = components/sha384.js; sourceTree = "<group>"; };
+		6F9AA8E71DF63B47009BAD95 /* sha512.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha512.js; path = components/sha512.js; sourceTree = "<group>"; };
+		6F9AA8E81DF63B47009BAD95 /* tripledes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = tripledes.js; path = components/tripledes.js; sourceTree = "<group>"; };
 		6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoJS.swift; sourceTree = "<group>"; };
-		6FC3C94E1B8C3F8200F4956D /* md5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = md5.js; sourceTree = "<group>"; };
-		6FC3C9501B8C406000F4956D /* sha256.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha256.js; sourceTree = "<group>"; };
-		6FC3C9521B8C426C00F4956D /* sha3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha3.js; sourceTree = "<group>"; };
-		6FC3C9541B8C431B00F4956D /* sha1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha1.js; sourceTree = "<group>"; };
-		6FC3C9571B8C4D3400F4956D /* aes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = aes.js; sourceTree = "<group>"; };
-		6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-cfb.js"; sourceTree = "<group>"; };
-		6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-ansix923.js"; sourceTree = "<group>"; };
-		6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ctr.js"; sourceTree = "<group>"; };
-		6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ofb.js"; sourceTree = "<group>"; };
-		6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ecb.js"; sourceTree = "<group>"; };
-		6FFD1E941B8D323300258DE7 /* pad-iso97971.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-iso97971.js"; sourceTree = "<group>"; };
-		6FFD1E961B8D341400258DE7 /* pad-iso10126.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-iso10126.js"; sourceTree = "<group>"; };
-		6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-zeropadding.js"; sourceTree = "<group>"; };
-		6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "pad-nopadding.js"; sourceTree = "<group>"; };
-		6FFD1E9E1B8D46DC00258DE7 /* sha512.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha512.js; sourceTree = "<group>"; };
-		6FFD1EA01B8D4ABF00258DE7 /* sha224.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha224.js; sourceTree = "<group>"; };
-		6FFD1EA21B8D4B6E00258DE7 /* sha384.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sha384.js; sourceTree = "<group>"; };
-		6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ripemd160.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6F72B0D31B6A8EBA0068287A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F72B0E81B6A8EBA0068287A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				6F72B0D81B6A8EBA0068287A /* Crypto JS */,
-				6F72B0EE1B6A8EBA0068287A /* Crypto JSTests */,
 				6F72B0D71B6A8EBA0068287A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				6F72B0D61B6A8EBA0068287A /* Crypto JS.app */,
-				6F72B0EB1B6A8EBA0068287A /* Crypto JSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,45 +114,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6F72B0EE1B6A8EBA0068287A /* Crypto JSTests */ = {
-			isa = PBXGroup;
-			children = (
-				6F72B0F11B6A8EBA0068287A /* Crypto_JSTests.swift */,
-				6F72B0EF1B6A8EBA0068287A /* Supporting Files */,
-			);
-			path = "Crypto JSTests";
-			sourceTree = "<group>";
-		};
-		6F72B0EF1B6A8EBA0068287A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6F72B0F01B6A8EBA0068287A /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		6FFD1EA61B8D699100258DE7 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				6FC3C9571B8C4D3400F4956D /* aes.js */,
-				6FC3C94E1B8C3F8200F4956D /* md5.js */,
-				6FC3C9541B8C431B00F4956D /* sha1.js */,
-				6FFD1EA01B8D4ABF00258DE7 /* sha224.js */,
-				6FC3C9501B8C406000F4956D /* sha256.js */,
-				6FFD1EA21B8D4B6E00258DE7 /* sha384.js */,
-				6FFD1E9E1B8D46DC00258DE7 /* sha512.js */,
-				6FC3C9521B8C426C00F4956D /* sha3.js */,
-				6FFD1EA41B8D4C4D00258DE7 /* ripemd160.js */,
-				6FFD1E8A1B8CFDDD00258DE7 /* mode-cfb.js */,
-				6FFD1E8E1B8D2E5400258DE7 /* mode-ctr.js */,
-				6FFD1E901B8D2F7300258DE7 /* mode-ofb.js */,
-				6F17BDA71DAC931700FA4263 /* tripledes.js */,
-				6FFD1E921B8D2FEF00258DE7 /* mode-ecb.js */,
-				6FFD1E981B8D350400258DE7 /* pad-zeropadding.js */,
-				6FFD1E9A1B8D376400258DE7 /* pad-nopadding.js */,
-				6FFD1E941B8D323300258DE7 /* pad-iso97971.js */,
-				6FFD1E961B8D341400258DE7 /* pad-iso10126.js */,
-				6FFD1E8C1B8D2C8E00258DE7 /* pad-ansix923.js */,
+				6F9AA8D61DF63B47009BAD95 /* aes.js */,
+				6F9AA8D71DF63B47009BAD95 /* md5.js */,
+				6F9AA8D81DF63B47009BAD95 /* mode-cfb.js */,
+				6F9AA8D91DF63B47009BAD95 /* mode-ctr.js */,
+				6F9AA8DA1DF63B47009BAD95 /* mode-ecb.js */,
+				6F9AA8DB1DF63B47009BAD95 /* mode-ofb.js */,
+				6F9AA8DC1DF63B47009BAD95 /* pad-ansix923.js */,
+				6F9AA8DD1DF63B47009BAD95 /* pad-iso10126.js */,
+				6F9AA8DE1DF63B47009BAD95 /* pad-iso97971.js */,
+				6F9AA8DF1DF63B47009BAD95 /* pad-nopadding.js */,
+				6F9AA8E01DF63B47009BAD95 /* pad-zeropadding.js */,
+				6F9AA8E11DF63B47009BAD95 /* ripemd160.js */,
+				6F9AA8E21DF63B47009BAD95 /* sha1.js */,
+				6F9AA8E31DF63B47009BAD95 /* sha3.js */,
+				6F9AA8E41DF63B47009BAD95 /* sha224.js */,
+				6F9AA8E51DF63B47009BAD95 /* sha256.js */,
+				6F9AA8E61DF63B47009BAD95 /* sha384.js */,
+				6F9AA8E71DF63B47009BAD95 /* sha512.js */,
+				6F9AA8E81DF63B47009BAD95 /* tripledes.js */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -200,24 +160,6 @@
 			productReference = 6F72B0D61B6A8EBA0068287A /* Crypto JS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6F72B0EA1B6A8EBA0068287A /* Crypto JSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6F72B0F81B6A8EBA0068287A /* Build configuration list for PBXNativeTarget "Crypto JSTests" */;
-			buildPhases = (
-				6F72B0E71B6A8EBA0068287A /* Sources */,
-				6F72B0E81B6A8EBA0068287A /* Frameworks */,
-				6F72B0E91B6A8EBA0068287A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6F72B0ED1B6A8EBA0068287A /* PBXTargetDependency */,
-			);
-			name = "Crypto JSTests";
-			productName = "Crypto JSTests";
-			productReference = 6F72B0EB1B6A8EBA0068287A /* Crypto JSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,17 +168,12 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Emartin;
 				TargetAttributes = {
 					6F72B0D51B6A8EBA0068287A = {
 						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 0810;
-					};
-					6F72B0EA1B6A8EBA0068287A = {
-						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0810;
-						TestTargetID = 6F72B0D51B6A8EBA0068287A;
 					};
 				};
 			};
@@ -254,7 +191,6 @@
 			projectRoot = "";
 			targets = (
 				6F72B0D51B6A8EBA0068287A /* Crypto JS */,
-				6F72B0EA1B6A8EBA0068287A /* Crypto JSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,35 +200,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FFD1E8F1B8D2E5400258DE7 /* mode-ctr.js in Resources */,
-				6FC3C94F1B8C3F8200F4956D /* md5.js in Resources */,
-				6FFD1E8D1B8D2C8E00258DE7 /* pad-ansix923.js in Resources */,
-				6FFD1E931B8D2FEF00258DE7 /* mode-ecb.js in Resources */,
-				6FFD1E971B8D341400258DE7 /* pad-iso10126.js in Resources */,
-				6FFD1E9B1B8D376400258DE7 /* pad-nopadding.js in Resources */,
-				6FFD1EA11B8D4ABF00258DE7 /* sha224.js in Resources */,
-				6FFD1E951B8D323300258DE7 /* pad-iso97971.js in Resources */,
-				6FFD1E991B8D350400258DE7 /* pad-zeropadding.js in Resources */,
-				6FFD1E911B8D2F7300258DE7 /* mode-ofb.js in Resources */,
-				6FC3C9511B8C406000F4956D /* sha256.js in Resources */,
-				6FFD1EA31B8D4B6E00258DE7 /* sha384.js in Resources */,
-				6FFD1E8B1B8CFDDD00258DE7 /* mode-cfb.js in Resources */,
-				6FFD1EA51B8D4C4D00258DE7 /* ripemd160.js in Resources */,
-				6FC3C9581B8C4D3400F4956D /* aes.js in Resources */,
+				6F9AA8F31DF63B47009BAD95 /* pad-zeropadding.js in Resources */,
+				6F9AA8FA1DF63B47009BAD95 /* sha512.js in Resources */,
+				6F9AA8EA1DF63B47009BAD95 /* md5.js in Resources */,
 				6F72B0E11B6A8EBA0068287A /* Main.storyboard in Resources */,
+				6F9AA8F21DF63B47009BAD95 /* pad-nopadding.js in Resources */,
+				6F9AA8F41DF63B47009BAD95 /* ripemd160.js in Resources */,
+				6F9AA8ED1DF63B47009BAD95 /* mode-ecb.js in Resources */,
+				6F9AA8F81DF63B47009BAD95 /* sha256.js in Resources */,
 				6F72B0E61B6A8EBA0068287A /* LaunchScreen.xib in Resources */,
-				6FC3C9531B8C426C00F4956D /* sha3.js in Resources */,
-				6FFD1E9F1B8D46DC00258DE7 /* sha512.js in Resources */,
+				6F9AA8EB1DF63B47009BAD95 /* mode-cfb.js in Resources */,
+				6F9AA8E91DF63B47009BAD95 /* aes.js in Resources */,
+				6F9AA8EE1DF63B47009BAD95 /* mode-ofb.js in Resources */,
+				6F9AA8F91DF63B47009BAD95 /* sha384.js in Resources */,
+				6F9AA8F71DF63B47009BAD95 /* sha224.js in Resources */,
+				6F9AA8F01DF63B47009BAD95 /* pad-iso10126.js in Resources */,
+				6F9AA8F11DF63B47009BAD95 /* pad-iso97971.js in Resources */,
+				6F9AA8F61DF63B47009BAD95 /* sha3.js in Resources */,
+				6F9AA8EF1DF63B47009BAD95 /* pad-ansix923.js in Resources */,
 				6F72B0E31B6A8EBA0068287A /* Images.xcassets in Resources */,
-				6FC3C9551B8C431B00F4956D /* sha1.js in Resources */,
-				6F17BDA81DAC931700FA4263 /* tripledes.js in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F72B0E91B6A8EBA0068287A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6F9AA8EC1DF63B47009BAD95 /* mode-ctr.js in Resources */,
+				6F9AA8F51DF63B47009BAD95 /* sha1.js in Resources */,
+				6F9AA8FB1DF63B47009BAD95 /* tripledes.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,23 +238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F72B0E71B6A8EBA0068287A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6F72B0F21B6A8EBA0068287A /* Crypto_JSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6F72B0ED1B6A8EBA0068287A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6F72B0D51B6A8EBA0068287A /* Crypto JS */;
-			targetProxy = 6F72B0EC1B6A8EBA0068287A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6F72B0DF1B6A8EBA0068287A /* Main.storyboard */ = {
@@ -360,8 +273,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -406,8 +321,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -426,6 +343,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -455,44 +373,6 @@
 			};
 			name = Release;
 		};
-		6F72B0F91B6A8EBA0068287A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Crypto JSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "emartin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto JS.app/Crypto JS";
-			};
-			name = Debug;
-		};
-		6F72B0FA1B6A8EBA0068287A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Crypto JSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "emartin.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto JS.app/Crypto JS";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,15 +390,6 @@
 			buildConfigurations = (
 				6F72B0F61B6A8EBA0068287A /* Debug */,
 				6F72B0F71B6A8EBA0068287A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6F72B0F81B6A8EBA0068287A /* Build configuration list for PBXNativeTarget "Crypto JSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6F72B0F91B6A8EBA0068287A /* Debug */,
-				6F72B0FA1B6A8EBA0068287A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

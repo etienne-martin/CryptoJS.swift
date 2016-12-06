@@ -8,6 +8,35 @@
 
 import UIKit
 
+extension Data {
+    func hexString() -> NSString {
+        let str = NSMutableString()
+        let bytes = UnsafeBufferPointer<UInt8>(start: (self as NSData).bytes.bindMemory(to: UInt8.self, capacity: self.count), count:self.count)
+        for byte in bytes {
+            str.appendFormat("%02hhx", byte)
+        }
+        return str
+    }
+}
+extension String {
+    func hexadecimal() -> Data? {
+        var data = Data(capacity: characters.count / 2)
+        
+        let regex = try! NSRegularExpression(pattern: "[0-9a-f]{1,2}", options: .caseInsensitive)
+        regex.enumerateMatches(in: self, options: [], range: NSMakeRange(0, characters.count)) { match, flags, stop in
+            let byteString = (self as NSString).substring(with: match!.range)
+            var num = UInt8(byteString, radix: 16)!
+            data.append(&num, count: 1)
+        }
+        
+        guard data.count > 0 else {
+            return nil
+        }
+        
+        return data
+    }
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -35,6 +64,24 @@ class ViewController: UIViewController {
         
         // AES decryption with custom mode and padding
         print(AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
+        
+        // AES file encryption
+        let sampleFilePath = Bundle.main.path(forResource: "sampleFile", ofType: "jpg")
+        let sampleFileData: NSData? = NSData(contentsOfFile: sampleFilePath!)
+        
+        if let fileData = sampleFileData {
+            // Convert the file data to a hexadecimal string
+            let fileHexData = (fileData as Data).hexString() as String
+            
+            // Encrypt the hexadecimal string
+            let encryptedFile = AES.encrypt(fileHexData, secretKey: "password123")
+            
+            // AES file decryption
+            let decryptedFile = (AES.decrypt(encryptedFile, secretKey: "password123")).hexadecimal()!
+            
+            // Write the file to the disk
+            FileManager.default.createFile(atPath: URL(string: "/var/tmp")!.appendingPathComponent("sampleFile.jpg").path,contents:decryptedFile, attributes:nil)
+        }
         
         // Load TripleDES
         let TripleDES = CryptoJS.TripleDES()

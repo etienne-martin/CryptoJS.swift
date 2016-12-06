@@ -31,6 +31,7 @@
 		6F9AA8F91DF63B47009BAD95 /* sha384.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E61DF63B47009BAD95 /* sha384.js */; };
 		6F9AA8FA1DF63B47009BAD95 /* sha512.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E71DF63B47009BAD95 /* sha512.js */; };
 		6F9AA8FB1DF63B47009BAD95 /* tripledes.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8E81DF63B47009BAD95 /* tripledes.js */; };
+		6F9AA8FD1DF63F80009BAD95 /* sampleFile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AA8FC1DF63F80009BAD95 /* sampleFile.jpg */; };
 		6FC3C94B1B8C2EC500F4956D /* CryptoJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		6F9AA8E61DF63B47009BAD95 /* sha384.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha384.js; path = components/sha384.js; sourceTree = "<group>"; };
 		6F9AA8E71DF63B47009BAD95 /* sha512.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sha512.js; path = components/sha512.js; sourceTree = "<group>"; };
 		6F9AA8E81DF63B47009BAD95 /* tripledes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = tripledes.js; path = components/tripledes.js; sourceTree = "<group>"; };
+		6F9AA8FC1DF63F80009BAD95 /* sampleFile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleFile.jpg; sourceTree = "<group>"; };
 		6FC3C94A1B8C2EC500F4956D /* CryptoJS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoJS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		6F72B0D81B6A8EBA0068287A /* Crypto JS */ = {
 			isa = PBXGroup;
 			children = (
+				6F9AA8FC1DF63F80009BAD95 /* sampleFile.jpg */,
 				6FFD1EA61B8D699100258DE7 /* components */,
 				6F72B0DB1B6A8EBA0068287A /* AppDelegate.swift */,
 				6F72B0DD1B6A8EBA0068287A /* ViewController.swift */,
@@ -217,6 +220,7 @@
 				6F9AA8F01DF63B47009BAD95 /* pad-iso10126.js in Resources */,
 				6F9AA8F11DF63B47009BAD95 /* pad-iso97971.js in Resources */,
 				6F9AA8F61DF63B47009BAD95 /* sha3.js in Resources */,
+				6F9AA8FD1DF63F80009BAD95 /* sampleFile.jpg in Resources */,
 				6F9AA8EF1DF63B47009BAD95 /* pad-ansix923.js in Resources */,
 				6F72B0E31B6A8EBA0068287A /* Images.xcassets in Resources */,
 				6F9AA8EC1DF63B47009BAD95 /* mode-ctr.js in Resources */,

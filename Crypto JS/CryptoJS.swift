@@ -29,7 +29,7 @@ open class CryptoJS{
                     print("Loaded aes.js")
                     
                     // Evaluate aes.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     encryptFunction = cryptoJScontext?.objectForKeyedSubscript("encrypt")
@@ -78,7 +78,7 @@ open class CryptoJS{
                     print("Loaded tripledes.js")
                     
                     // Evaluate tripledes.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     encryptFunction = cryptoJScontext?.objectForKeyedSubscript("encryptTripleDES")
@@ -119,7 +119,7 @@ open class CryptoJS{
                     print("Loaded tripledes.js (DES)")
                     
                     // Evaluate tripledes.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     encryptFunction = cryptoJScontext?.objectForKeyedSubscript("encryptDES")
@@ -161,7 +161,7 @@ open class CryptoJS{
                     print("Loaded md5.js")
                     
                     // Evaluate md5.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.MD5 = cryptoJScontext?.objectForKeyedSubscript("MD5")
@@ -200,7 +200,7 @@ open class CryptoJS{
                     print("Loaded sha1.js")
                     
                     // Evaluate sha1.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.SHA1 = cryptoJScontext?.objectForKeyedSubscript("SHA1")
@@ -239,7 +239,7 @@ open class CryptoJS{
                     print("Loaded sha224.js")
                     
                     // Evaluate sha224.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.SHA224 = cryptoJScontext?.objectForKeyedSubscript("SHA224")
@@ -278,7 +278,7 @@ open class CryptoJS{
                     print("Loaded sha256.js")
                     
                     // Evaluate sha256.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.SHA256 = cryptoJScontext?.objectForKeyedSubscript("SHA256")
@@ -317,7 +317,7 @@ open class CryptoJS{
                     print("Loaded sha384.js")
                     
                     // Evaluate sha384.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.SHA384 = cryptoJScontext?.objectForKeyedSubscript("SHA384")
@@ -355,7 +355,7 @@ open class CryptoJS{
                     print("Loaded sha512.js")
                     
                     // Evaluate sha512.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.SHA512 = cryptoJScontext?.objectForKeyedSubscript("SHA512")
@@ -394,7 +394,7 @@ open class CryptoJS{
                     print("Loaded sha3.js")
                     
                     // Evaluate sha3.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.SHA3 = cryptoJScontext?.objectForKeyedSubscript("SHA3")
@@ -434,7 +434,7 @@ open class CryptoJS{
                     print("Loaded ripemd160.js")
                     
                     // Evaluate ripemd160.js
-                    cryptoJScontext?.evaluateScript(cryptoJS)
+                    _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     
                     // Reference functions
                     self.RIPEMD160 = cryptoJScontext?.objectForKeyedSubscript("RIPEMD160")
@@ -475,7 +475,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded mode-\(CryptoJS.mode().CFB).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load mode-\(CryptoJS.mode().CFB).js")
@@ -494,7 +494,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded mode-\(CryptoJS.mode().CTR).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load mode-\(CryptoJS.mode().CTR).js")
@@ -514,7 +514,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded mode-\(CryptoJS.mode().OFB).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load mode-\(CryptoJS.mode().OFB).js")
@@ -534,7 +534,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded mode-\(CryptoJS.mode().ECB).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load mode-\(CryptoJS.mode().ECB).js")
@@ -563,7 +563,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded pad-\(CryptoJS.pad().AnsiX923).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load pad-\(CryptoJS.pad().AnsiX923).js")
@@ -587,7 +587,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded pad-\(CryptoJS.pad().Iso97971).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load pad-\(CryptoJS.pad().Iso97971).js")
@@ -607,7 +607,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded pad-\(CryptoJS.pad().Iso10126).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load pad-\(CryptoJS.pad().Iso10126).js")
@@ -627,7 +627,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded pad-\(CryptoJS.pad().ZeroPadding).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load pad-\(CryptoJS.pad().ZeroPadding).js")
@@ -647,7 +647,7 @@ open class CryptoJS{
                         let cryptoJS = try String(contentsOfFile: cryptoJSpath!, encoding:String.Encoding.utf8)
                         print("Loaded pad-\(CryptoJS.pad().NoPadding).js")
                         // Evaluate script
-                        cryptoJScontext?.evaluateScript(cryptoJS)
+                        _ = cryptoJScontext?.evaluateScript(cryptoJS)
                     }
                     catch {
                         print("Unable to load pad-\(CryptoJS.pad().NoPadding).js")

@@ -7,7 +7,8 @@ Compatible with https://github.com/brix/crypto-js.
 
 iOS  
 macOS  
-Web browsers
+Web browsers  
+openSSL
 
 #### Installation
 
@@ -38,6 +39,15 @@ let decrypted = AES.decrypt(encrypted, secretKey: "password123")
 
 // AES decryption with custom mode and padding
 let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+```
+### Compatible with OpenSSL
+
+```bash
+# Basic openSSL AES encryption
+openssl enc -aes-256-cbc -e -in /foo/thePlainTextFile.txt -out /bar/theEncryptedFile.txt -pass pass:"password123" -base64
+
+# Basic openSSL AES decryption
+openssl enc -aes-256-cbc -d -in /foo/theEncryptedFile.txt -out /bar/theDecryptedFile.txt -pass pass:"password123" -base64
 ```
 
 ### TripleDES

@@ -3,7 +3,7 @@ Cross-platform cryptographic functions in swift using the [Crypto JS library](ht
 
 Compatible with https://github.com/brix/crypto-js.
 
-#### Platforms Supported:
+#### Platforms Supported
 
 iOS  
 macOS  

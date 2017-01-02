@@ -5,11 +5,11 @@ Compatible with https://github.com/brix/crypto-js
 
 Allows you to share the same crypto between a native iOS/OSX application and a web application.
 
-##### Installation
+#### Installation
 
 Drag and drop CryptoJS.swift and the .js files in your Xcode project.
 
-#### AES
+### AES
 
 Supported modes: CBC (the default), CFB, CTR, OFB, ECB  
 Supported padding schemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
@@ -36,7 +36,7 @@ let decrypted = AES.decrypt(encrypted, secretKey: "password123")
 let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 ```
 
-#### TripleDES
+### TripleDES
 
 ```swift
 // Load the TripleDES module
@@ -49,7 +49,7 @@ let encrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
 let decrypted = TripleDES.decrypt(encrypted, secretKey: "password123")
 ```
 
-#### DES
+### DES
 
 ```swift
 // Load the DES module
@@ -62,7 +62,7 @@ let encrypted = DES.encrypt("secretMessage", secretKey: "password123")
 let decrypted = DES.decrypt(encrypted, secretKey: "password123")
 ```
 
-#### Hashers
+### Hashers
 
 ```swift
 let MD5 = CryptoJS.MD5()
@@ -85,4 +85,4 @@ var hash = SHA3.hash("mystring",outputLength: 256)
 var hash = RIPEMD160.hash("mystring")
 ```
 
-######Feel free to contribute!
+#####Feel free to contribute!

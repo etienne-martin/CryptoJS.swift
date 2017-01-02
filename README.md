@@ -8,11 +8,11 @@ Compatible with https://github.com/brix/crypto-js.
 iOS  
 macOS  
 Web browsers  
-openSSL
+openSSL  
 
 #### Installation
 
-Drag and drop CryptoJS.swift and the .js files in your Xcode project.
+Drag and drop [CryptoJS.swift](https://raw.githubusercontent.com/etienne-martin/CryptoJS.swift/master/Crypto%20JS/CryptoJS.swift) and the [javascript files](https://github.com/etienne-martin/CryptoJS.swift/tree/master/Crypto%20JS/components) in your Xcode project.
 
 ### AES
 

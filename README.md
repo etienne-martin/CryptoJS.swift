@@ -3,6 +3,12 @@ Cross-platform cryptographic functions in swift using the [Crypto JS library](ht
 
 Compatible with https://github.com/brix/crypto-js.
 
+#### Platforms Supported:
+
+iOS  
+macOS  
+Web browsers
+
 #### Installation
 
 Drag and drop CryptoJS.swift and the .js files in your Xcode project.
@@ -83,4 +89,4 @@ var hash = SHA3.hash("mystring",outputLength: 256)
 var hash = RIPEMD160.hash("mystring")
 ```
 
-#####Feel free to contribute!
+##### Feel free to contribute!

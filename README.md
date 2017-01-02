@@ -1,5 +1,7 @@
 # CryptoJS.swift
-Cross-platform cryptographic functions in swift using the [Crypto JS library](https://code.google.com/p/crypto-js/) (Thanks to Jeff Mott).
+Cross-platform cryptographic functions in swift using the [Crypto JS library](https://github.com/brix/crypto-js) (Thanks to Jeff Mott).
+
+Compatible with https://github.com/brix/crypto-js
 
 Allows you to share the same crypto between a native iOS/OSX application and a web application.
 

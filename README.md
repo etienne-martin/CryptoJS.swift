@@ -11,6 +11,9 @@ Drag and drop CryptoJS.swift and the .js files in your Xcode project.
 
 #### AES
 
+Supported modes: CBC (the default), CFB, CTR, OFB, ECB  
+Supported padding schemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
+
 ```swift
 // Load the AES module
 let AES = CryptoJS.AES()
@@ -31,9 +34,6 @@ let decrypted = AES.decrypt(encrypted, secretKey: "password123")
 
 // AES decryption with custom mode and padding
 let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
-
-// Supported modes: CBC (the default), CFB, CTR, OFB, ECB
-// Supported padding schemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
 ```
 
 #### TripleDES

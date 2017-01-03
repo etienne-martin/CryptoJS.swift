@@ -3,18 +3,18 @@ Cross-platform cryptographic functions in swift using the [Crypto JS library](ht
 
 Compatible with https://github.com/brix/crypto-js.
 
-#### Platforms Supported
+### Platforms Supported
 
 iOS  
 macOS  
 Web browsers  
 openSSL  
 
-#### Installation
+### Installation
 
 Drag and drop [CryptoJS.swift](https://raw.githubusercontent.com/etienne-martin/CryptoJS.swift/master/Crypto%20JS/CryptoJS.swift) and the [javascript files](https://github.com/etienne-martin/CryptoJS.swift/tree/master/Crypto%20JS/components) in your Xcode project.
 
-### AES
+## AES
 
 Supported modes: CBC (the default), CFB, CTR, OFB, ECB  
 Supported padding schemes: Pkcs7 (the default), Iso97971, AnsiX923, Iso10126, ZeroPadding, NoPadding
@@ -40,7 +40,7 @@ let decrypted = AES.decrypt(encrypted, secretKey: "password123")
 // AES decryption with custom mode and padding
 let decrypted = AES.decrypt(encrypted, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 ```
-### Compatible with OpenSSL
+##### Compatible with OpenSSL
 
 ```bash
 # Basic openSSL AES encryption
@@ -50,7 +50,7 @@ openssl enc -aes-256-cbc -e -in /foo/thePlainTextFile.txt -out /bar/theEncrypted
 openssl enc -aes-256-cbc -d -in /foo/theEncryptedFile.txt -out /bar/theDecryptedFile.txt -pass pass:"password123" -base64
 ```
 
-### TripleDES
+## TripleDES
 
 ```swift
 // Load the TripleDES module
@@ -63,7 +63,7 @@ let encrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
 let decrypted = TripleDES.decrypt(encrypted, secretKey: "password123")
 ```
 
-### DES
+## DES
 
 ```swift
 // Load the DES module
@@ -76,7 +76,7 @@ let encrypted = DES.encrypt("secretMessage", secretKey: "password123")
 let decrypted = DES.decrypt(encrypted, secretKey: "password123")
 ```
 
-### Hashers
+## Hashers
 
 ```swift
 let MD5 = CryptoJS.MD5()
@@ -99,4 +99,4 @@ var hash = SHA3.hash("mystring",outputLength: 256)
 var hash = RIPEMD160.hash("mystring")
 ```
 
-##### Feel free to contribute!
+#### Feel free to contribute!

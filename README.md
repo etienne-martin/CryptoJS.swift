@@ -99,4 +99,21 @@ var hash = SHA3.hash("mystring",outputLength: 256)
 var hash = RIPEMD160.hash("mystring")
 ```
 
-#### Feel free to contribute!
+## Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+
+Update the README.md with details of changes to the plugin.
+
+Update the [examples](https://github.com/etienne-martin/CryptoJS.swift/blob/master/Crypto%20JS/ViewController.swift) by demonstrating the changes to the plugin.
+
+Build the project & test all the features before submitting your pull request.
+
+## Authors
+
+* **Etienne Martin** - *Initial work* - [etiennemartin.ca](http://etiennemartin.ca/)
+* **Mladen Kajic** - *Improvements* - [mladen.kajic2@mail.dcu.ie](mailto:mladen.kajic2@mail.dcu.ie)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/etienne-martin/CryptoJS.swift/blob/master/LICENSE.txt) file for details.

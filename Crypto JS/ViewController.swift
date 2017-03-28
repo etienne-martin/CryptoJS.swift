@@ -42,28 +42,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("[AES]\n")
+        
         // Load only what's necessary
         let AES = CryptoJS.AES()
         
         // AES encryption
-        let encrypted = AES.encrypt("secretMessage", secretKey: "password123")
-        let encrypted2 = AES.encrypt("secretMessage", secretKey: "password123", options:["iv":123])
+        let encrypted = AES.encrypt("Secret message", password: "password123")
         
         // AES encryption with custom mode and padding
         _ = CryptoJS.mode.ECB() // Load custom mode
         _ = CryptoJS.pad.Iso97971() // Load custom padding scheme
-        let encrypted3 = AES.encrypt("secretMessage", secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
+        let encrypted2 = AES.encrypt("Secret message", password: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
         
         print(encrypted)
         print(encrypted2)
-        print(encrypted3)
         
         // AES decryption
-        print(AES.decrypt(encrypted, secretKey: "password123"))
-        print(AES.decrypt(encrypted2, secretKey: "password123"))
+        print(AES.decrypt(encrypted, password: "password123"))
         
         // AES decryption with custom mode and padding
-        print(AES.decrypt(encrypted3, secretKey: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
+        print(AES.decrypt(encrypted2, password: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ]))
         
         // AES file encryption
         let sampleFilePath = Bundle.main.path(forResource: "sampleFile", ofType: "jpg")
@@ -74,37 +73,42 @@ class ViewController: UIViewController {
             let fileHexData = (fileData as Data).hexString() as String
             
             // Encrypt the hexadecimal string
-            let encryptedFile = AES.encrypt(fileHexData, secretKey: "password123")
+            let encryptedFile = AES.encrypt(fileHexData, password: "password123")
             
             // AES file decryption
-            let decryptedFile = (AES.decrypt(encryptedFile, secretKey: "password123")).hexadecimal()!
+            let decryptedFile = (AES.decrypt(encryptedFile, password: "password123")).hexadecimal()!
             
             // Write the file to the disk
             FileManager.default.createFile(atPath: URL(string: "/var/tmp")!.appendingPathComponent("sampleFile.jpg").path,contents:decryptedFile, attributes:nil)
         }
         
+        print("\n[TripeDES]\n")
+        
         // Load TripleDES
         let TripleDES = CryptoJS.TripleDES()
         
         // TripleDES encryption
-        let TripleDESencrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
+        let TripleDESencrypted = TripleDES.encrypt("Secret message", password: "password123")
         
         print(TripleDESencrypted)
         
         // TripleDES decryption
-        print(TripleDES.decrypt(TripleDESencrypted, secretKey: "password123"))
+        print(TripleDES.decrypt(TripleDESencrypted, password: "password123"))
+        
+        print("\n[DES]\n")
         
         // Load DES
         let DES = CryptoJS.DES()
         
         // TripleDES encryption
-        let DESencrypted = DES.encrypt("secretMessage", secretKey: "password123")
+        let DESencrypted = DES.encrypt("Secret message", password: "password123")
         
         print(DESencrypted)
         
         // TripleDES decryption
-        print(DES.decrypt(DESencrypted, secretKey: "password123"))
+        print(DES.decrypt(DESencrypted, password: "password123"))
         
+        print("\n[Hashing functions]\n")
         
         // Hashers
         let MD5 = CryptoJS.MD5()

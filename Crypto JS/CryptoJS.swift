@@ -44,18 +44,18 @@ open class CryptoJS{
             
         }
         
-        open func encrypt(_ secretMessage: String,secretKey: String,options: Any?=nil)->String {
+        open func encrypt(_ message: String, password: String,options: Any?=nil)->String {
             if let unwrappedOptions: Any = options {
-                return "\(encryptFunction.call(withArguments: [secretMessage, secretKey, unwrappedOptions])!)"
+                return "\(encryptFunction.call(withArguments: [message, password, unwrappedOptions])!)"
             }else{
-                return "\(encryptFunction.call(withArguments: [secretMessage, secretKey])!)"
+                return "\(encryptFunction.call(withArguments: [message, password])!)"
             }
         }
-        open func decrypt(_ encryptedMessage: String,secretKey: String,options: Any?=nil)->String {
+        open func decrypt(_ message: String, password: String,options: Any?=nil)->String {
             if let unwrappedOptions: Any = options {
-                return "\(decryptFunction.call(withArguments: [encryptedMessage, secretKey, unwrappedOptions])!)"
+                return "\(decryptFunction.call(withArguments: [message, password, unwrappedOptions])!)"
             }else{
-                return "\(decryptFunction.call(withArguments: [encryptedMessage, secretKey])!)"
+                return "\(decryptFunction.call(withArguments: [message, password])!)"
             }
         }
         
@@ -93,11 +93,11 @@ open class CryptoJS{
             
         }
         
-        open func encrypt(_ secretMessage: String,secretKey: String)->String {
-            return "\(encryptFunction.call(withArguments: [secretMessage, secretKey])!)"
+        open func encrypt(_ message: String, password: String)->String {
+            return "\(encryptFunction.call(withArguments: [message, password])!)"
         }
-        open func decrypt(_ encryptedMessage: String,secretKey: String)->String {
-            return "\(decryptFunction.call(withArguments: [encryptedMessage, secretKey])!)"
+        open func decrypt(_ message: String, password: String)->String {
+            return "\(decryptFunction.call(withArguments: [message, password])!)"
         }
         
     }
@@ -134,11 +134,11 @@ open class CryptoJS{
             
         }
         
-        open func encrypt(_ secretMessage: String,secretKey: String)->String {
-            return "\(encryptFunction.call(withArguments: [secretMessage, secretKey])!)"
+        open func encrypt(_ message: String, password: String)->String {
+            return "\(encryptFunction.call(withArguments: [message, password])!)"
         }
-        open func decrypt(_ encryptedMessage: String,secretKey: String)->String {
-            return "\(decryptFunction.call(withArguments: [encryptedMessage, secretKey])!)"
+        open func decrypt(_ message: String, password: String)->String {
+            return "\(decryptFunction.call(withArguments: [message, password])!)"
         }
         
     }

@@ -25,16 +25,12 @@ let AES = CryptoJS.AES()
 
 // Basic AES encryption
 let encrypted = AES.encrypt("Secret message", password: "password123")
+let decrypted = AES.decrypt(encrypted, password: "password123")
 
 // AES encryption with custom mode and padding
 CryptoJS.mode.ECB() // Load custom mode
 CryptoJS.pad.Iso97971() // Load custom padding scheme
 let encrypted = AES.encrypt("Secret message", password: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
-
-// Basic AES decryption
-let decrypted = AES.decrypt(encrypted, password: "password123")
-
-// AES decryption with custom mode and padding
 let decrypted = AES.decrypt(encrypted, password: "password123", options:[ "mode": CryptoJS.mode().ECB, "padding": CryptoJS.pad().Iso97971 ])
 ```
 ##### Compatible with OpenSSL
@@ -55,8 +51,6 @@ let TripleDES = CryptoJS.TripleDES()
 
 // Basic TripleDES encryption
 let encrypted = TripleDES.encrypt("secretMessage", password: "password123")
-
-// Basic TripleDES decryption
 let decrypted = TripleDES.decrypt(encrypted, password: "password123")
 ```
 
@@ -68,8 +62,6 @@ let DES = CryptoJS.DES()
 
 // Basic DES encryption
 let encrypted = DES.encrypt("secretMessage", password: "password123")
-
-// Basic DES decryption
 let decrypted = DES.decrypt(encrypted, password: "password123")
 ```
 

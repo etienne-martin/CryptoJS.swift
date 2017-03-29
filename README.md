@@ -54,10 +54,10 @@ openssl enc -aes-256-cbc -d -in /foo/theEncryptedFile.txt -out /bar/theDecrypted
 let TripleDES = CryptoJS.TripleDES()
 
 // Basic TripleDES encryption
-let encrypted = TripleDES.encrypt("secretMessage", secretKey: "password123")
+let encrypted = TripleDES.encrypt("secretMessage", password: "password123")
 
 // Basic TripleDES decryption
-let decrypted = TripleDES.decrypt(encrypted, secretKey: "password123")
+let decrypted = TripleDES.decrypt(encrypted, password: "password123")
 ```
 
 ## DES
@@ -67,10 +67,10 @@ let decrypted = TripleDES.decrypt(encrypted, secretKey: "password123")
 let DES = CryptoJS.DES()
 
 // Basic DES encryption
-let encrypted = DES.encrypt("secretMessage", secretKey: "password123")
+let encrypted = DES.encrypt("secretMessage", password: "password123")
 
 // Basic DES decryption
-let decrypted = DES.decrypt(encrypted, secretKey: "password123")
+let decrypted = DES.decrypt(encrypted, password: "password123")
 ```
 
 ## Hashers
